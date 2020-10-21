@@ -1,0 +1,29 @@
+# Use PHP5.4 Single php.ini as default
+#AddHandler application/x-httpd-php56s .php
+
+#RewriteEngine on
+#RewriteCond %{SERVER_PORT} 80 
+#RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+#RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+#RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+#RewriteRule ^(.*)$ https://accent-language.com/$1 [R,L]
+
+# Changed PHP handler from application/x-httpd-php54 to application/x-httpd-phpbeta on Wed Nov  4 20:49:17 MST 2015.
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>

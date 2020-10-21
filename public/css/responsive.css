@@ -1,0 +1,481 @@
+@media screen and (min-width:1920px){
+
+.login_inner .checkmark {position: absolute;top: 2px;}  
+	
+}
+@media screen and (min-width:1600px){
+	
+}
+
+@media screen and (max-width:1366px){
+	.login_inner {position: inherit;transform:inherit;}
+	.login_inner .submit_register {padding: 3px 0;}
+	.reset_pass span{margin-top: 20px;}
+	.login_img {height: calc(100vh - 150px);}
+	.reset_pass span {margin-top: 5px;}
+	.login_inner {padding: 0px 0px 0px 60px;}
+	.recruitment .sub_page_header{font-size: 22px;}
+	.recruitment_margin h4 {font-size: 20px;}
+	.sub_page_header.rec{font-size: 24px;}
+	
+}
+
+
+@media screen and (max-width:1250px){
+
+	.login_inner h1 {font-size: 34px;}
+	.login_inner h3 {font-size: 18px;padding: 15px 0;}
+
+	.login_inner h3 {font-size: 16px;padding: 10px 0;}
+	.logine_sec .form-control{height: 40px;}
+	.logine_sec label {line-height: 20px;}
+
+}
+
+
+@media screen and (max-width:1199px){
+	#cssmenu ul {margin: 0px 0 0;}
+
+	.login_inner {padding: 50px;}
+	.login_img {height: calc(100vh - 150px);}
+	.login_inner {padding: 30px 0px 0px 40px}
+	.reset_pass span {margin-top: 0;}
+	.login_inner h1 {font-size: 28px;}
+	.login_inner h3 {font-size: 14px;padding: 6px 0;}
+	.login_inner .form-group {margin-bottom: 15px;}
+	.login_inner .submit_register {padding: 2px 0;}
+	.btnsub_arr {padding: 5px 50px 5px 15px;font-size: 14px;}
+
+	
+
+
+	
+}
+
+@media screen and (max-width:991px){
+
+	#cssmenu > ul > li > a {padding: 15px;}
+	#cssmenu { padding: 15px 0;}
+	.small .logo a {width: 120px;}
+	#cssmenu ul {margin: 5px 0 0;}
+	#cssmenu > ul > li {padding: 0 0px;}
+
+	/* Sub menu css start */
+		.toggle_menu .toggle_nav_open {top: 78px;position: absolute;}
+		.toggle_nav_open{top: 0px;position: relative;}
+		.toogle_mobile ul{position: relative;}
+
+    /* Sub menu css End */
+
+	#cssmenu {padding: 10px 0;}
+
+	#cssmenu li a:hover:before, #cssmenu li.active a:before {
+    left: 15px;
+    width: 20px;
+    opacity: 1;
+    margin: 0;
+    bottom: 5px;
+}
+
+.menu_right .freetrial_btn{padding: 10px 15px;}
+.menu_right {margin-top: 10px;}
+.small #cssmenu ul {margin: 4px 0 0;}
+.small .menu_right {margin: 9px 0 0;}
+.small .toggle_menu span {margin-top: 5px;}
+.register_sec .register_inner{padding: 30px 40px;}
+footer{height:auto;padding: 5px 0px;}
+footer .social_foot li {padding-right: 2px;}
+footer .foot_social li{padding-right: 10px;}
+footer p {font-size: 11px;}
+
+/* Profile css */
+
+.profile_inner h3 {font-size: 22px;padding: 15px 25px;}
+.profile_form h4 {font-size: 18px;margin-bottom: 35px;}
+.table_custom tbody>tr>td {font-size: 12px;}
+
+.login_inner h1 {font-size: 28px;}
+.login_inner h3 {padding: 15px 0;}
+.login_inner {padding: 40px 0; position: inherit;top: 0;transform: inherit;width: 100%;float: left;height: auto;display: inherit;}
+.log_flex .col-md-6{max-width: 100%;}
+.login_img {height: 570px;width: 100%;}
+
+footer{position: inherit;}
+.freetrial_btn{margin: 0 15px;top: 0px;position: relative;}
+.accordion li:last-child .link{margin-top: 0px;}
+.button_nav{top: -3px;}
+
+
+
+  .logine_sec .row.log {display: inherit;}
+  .logine_sec .login_img {width: 100%;height: 450px;position: relative;}
+  .data_filter .btnsub_arr:after{top: 11px;left: 15px;}
+  .data_filter .btnsub_arr {padding: 10px 15px 10px 40px;font-size: 14px;}
+  .btnsub_arr{font-size: 14px;}
+  .btn{font-size: 14px;}
+
+   .accent_pricebox .accent_box{margin-bottom: 20px;}
+   .accent_pricebox .accent_box{min-height: 370px;}
+
+   .history_detail .tym_table_Details {float: left;width: 25%;}
+
+   .active_recall_pair .status_right {padding: 5px 0px 30px;}
+   .point_to_improve .improve_box h4 {font-size: 16px;}
+
+   .point_to_improve .average_btn a{margin-bottom: 10px;}
+   .profile_inner h3 {font-size: 20px;padding: 15px 20px;}
+   .lesson_comment .cmnt_right{margin-bottom: 20px;}
+   .one_page_canvas .card-header a {font-size: 14px;}
+   .sub_page_header.rec {font-size: 20px;}
+   .recruitment_margin ol li {font-size: 16px;}
+
+	/* 4-9-2019 */
+	.slider_img_mobile {display: block;margin-bottom: 25px;}
+	.projct_section .slider_im{display: none;}
+	h4.header_pink, h4.header_green {margin-bottom: 30px;}
+	h4.page_header span {left: 65%;}
+	ul.alfa_key {display: inline-block;}
+	ul.alfa_key li {display: inline-block;}
+	.slider_text h4.title_slider:after {left: 30%;}
+	.scan_model .modal-body{text-align: center;}
+	.menu_right .nav-wrapper{margin-top: 2px!important;}
+	#email-container .col-1 {-ms-flex: 0 0 15.333333%;flex: 0 0 15.333333%;max-width: 15.333333%;}
+	.teacher_profile_sec {width: 55%;}
+	.chart_header {font-size: 14px;}
+}
+
+@media screen and (max-width:767px){
+
+	.logo2{display:none}
+	.small .logo a {width: 70px;padding: 5px;margin-left: 10px;}
+	nav{width:100%;}
+	.head_top{display: none;}
+	header .col-md-12{padding: 0;}
+
+	#cssmenu ul li.get_quote_btn a{width: 200px;border-bottom: 0;}
+	#cssmenu ul li.get_quote_btn:hover{background: transparent;}
+	#cssmenu ul li.contact_detail_mob:hover {background: transparent;}
+	#cssmenu ul li.contact_detail_mob:hover a{color:#878787;}
+	#cssmenu ul li.contact_detail_mob a{display: inline-block;width: auto;}
+	#cssmenu ul li.contact_detail_mob a:hover{color: #b71a69 !important;}
+
+	header .contact_detail_mob{display: block !important;}
+
+	/* menu css */
+
+	.button_nav{display: none;}
+	
+    #cssmenu ul {margin: 10px 0 0;}
+	#cssmenu{width:100%;padding: 0px 0;}
+
+	/* Sub menu css start */
+	#cssmenu ul{width:100%;display:none;transition: none;border-bottom: 2px solid #002e58;overflow-y: scroll;height: 100vh;}
+	#cssmenu ul li{width:100%;border-bottom:1px solid #cdcdcd;padding-left: 0px;}
+	 /* Sub menu css End */
+
+	#cssmenu ul li:hover{background:#002e58;}
+	#cssmenu ul li:last-child:hover{background:transparent;}
+	#cssmenu ul ul li,#cssmenu li:hover > ul > li{height:auto}
+	#cssmenu ul li a,#cssmenu ul ul li a{width:100%;border-bottom:0}
+	#cssmenu > ul > li{float:none}
+	#cssmenu ul ul li a{padding-left:25px}
+	#cssmenu ul ul li{background:#fff!important;}
+	#cssmenu ul ul li:hover a{color: #fff !important;}
+	#cssmenu ul ul li:hover{background:#002e58!important;}
+	#cssmenu ul ul ul li a{padding-left:35px}
+
+	li.show_mobile.toogle_mobile.has-sub{border-bottom: 1px solid #cdcdcd;}
+
+	/* Sub menu css start */
+	#cssmenu ul ul li a{color:#999999;background:none}
+	.has-sub a{color:#999999 !important;}
+	.has-sub ul{border-bottom: 0px !important;}
+	.has-sub:hover{background: #fff !important;}
+    /* Sub menu css End */
+
+	#cssmenu ul ul li:hover > a,#cssmenu ul ul li.active > a{color:#fff}
+	#cssmenu ul ul,#cssmenu ul ul ul{position:relative;left:0;width:100%;margin:0;text-align:left;height: 100%;}
+	#cssmenu > ul > li.has-sub > a:after,#cssmenu > ul > li.has-sub > a:before,#cssmenu ul ul > li.has-sub > a:after,#cssmenu ul ul > li.has-sub > a:before{display:none}
+	#cssmenu #head-mobile{display:inline-block;padding:23px;color:#ddd;font-size:12px;font-weight:700}
+	.button{width:55px;height:46px;position:absolute;right:0;top:0;cursor:pointer;z-index: 12399994;}
+	.button:after{position:absolute;top:22px;right:20px;display:block;height:8px;width:20px;border-top:2px solid #000000;border-bottom:2px solid #000000;content:''}
+	.button:before{-webkit-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;position:absolute;top:16px;right:20px;display:block;height:2px;width:20px;background:#000000;content:''}
+	.button.menu-opened:after{-webkit-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;top:23px;border:0;height:2px;width:19px;background:#000000;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
+	.button.menu-opened:before{top:23px;background:#000000;width:19px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
+	
+	/* Sub menu css start */
+	#cssmenu .submenu-button{position:absolute;z-index:99;right:0;top:0;display:block;border-left:1px solid #444;height:44px;width:46px;cursor:pointer;background: #262626;}
+	/* Sub menu css End */
+	#cssmenu .submenu-button.submenu-opened{background:#262626}
+	#cssmenu ul ul .submenu-button{height:34px;width:34px}
+	#cssmenu .submenu-button:after{position:absolute;top:22px;right:19px;width:8px;height:2px;display:block;background:#ddd;content:''}
+	#cssmenu ul ul .submenu-button:after{top:15px;right:13px}
+	#cssmenu .submenu-button.submenu-opened:after{background:#fff;}
+	#cssmenu .submenu-button:before{position:absolute;top:19px;right:22px;display:block;width:2px;height:8px;background:#ddd;content:''}
+	#cssmenu ul ul .submenu-button:before{top:12px;right:16px}
+	#cssmenu .submenu-button.submenu-opened:before{display:none}
+	#cssmenu ul ul ul li.active a{border-left:none}
+	#cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active > a{border-top:none}
+	#cssmenu > ul > li:hover > a{color: #fff;}
+	
+
+	.desk_menu .show_mobile{display: block !important;}
+	.logo a {padding-top: 5px;}
+
+
+
+	.accordion .has-sub:hover{background: transparent;}
+
+	/* Sub menu css start */
+	.see_mob{display: block!important;float: left !important;margin-bottom: 60px;}
+	/* Sub menu css End */
+	.see_mob .freetrial_btn{
+		width: auto !important;
+	    border-bottom: 0 !important;
+	    display: inline-block !important;
+	    color: #fff !important;
+	    padding: 10px 15px !important;
+	    margin: 0;
+	    margin-top: 10px !important;
+    	margin-bottom: 0px;
+    	    margin-left: 10px;
+	}
+
+	.submenu.open{z-index: 999;position: absolute !important;}
+
+	.menu_right .freetrial_btn{display: none;}
+	.menu_right {float: right; margin-top: 15px;width: auto;display: inline-block;text-align: right;padding-right: 50px;}
+	#cssmenu li a:before{background: transparent;}
+	#cssmenu li.active{background: #002e58;}
+	#cssmenu > ul > li:hover > a, #cssmenu ul li.active a {color: #fff;}
+
+	footer .foot_social{text-align: center;}
+	footer p{text-align: center;line-height: 16px;font-size: 12px;}
+	footer .social_foot{text-align: center;margin-top: 5px;}
+	footer .foot_social li a i {font-size: 18px;}
+	.button {height: 40px;top:10px;}
+
+
+
+	.steps ul, .steps ul li a span.text
+	{
+	    width: auto;
+	    margin: 0 auto !important;
+	}
+	.actions ul 
+	{
+	    position: relative;
+	    bottom: auto;
+	    left: auto;
+	}
+	.captcha_text span {
+	    position: absolute;
+	    top: 69%;
+	    left: 50%;
+	    transform: translate(-46% , -47%);
+	}
+
+	.submit_btn {float: right; margin-top: 20px;}
+
+	.lesson_record_sec h4 {font-size: 14px;margin-bottom: 5px;}
+	.custome_nav ul li span {font-size: 14px;}
+	.table_custom tbody>tr>td {padding: 12px 6px;font-size: 12px;}
+
+	/* Profile page css Start */
+
+	.profile_inner h3 {font-size: 20px;}
+	.profile_form h4 {font-size: 16px;margin-bottom: 20px;}
+	.profile_sec .form-group.half {width: 100%;}
+	.form-group.half.padd{padding-left: 0;}
+
+	/*login page css */
+
+	.login_inner h1 {font-size: 28px;}
+	.login_inner h3 {font-size: 20px;padding: 15px 0;}
+	.login_img {width: 100%;height: 350px;}
+
+	.table_custom{border: 0px;}
+	.table_custom tbody>tr>td{font-size: 12px;}
+
+	.table_custom .checkmark {top: 0px;left: 15px;}
+	.tab_pnle_sec .custome_nav ul li{width: 20%; padding: 0px;}
+
+   .table_custom thead tr th:first-child {width: 85px;display: inline-block; border-bottom: 0;}
+
+   .listswap-list-wrap {width: 100%;}
+   .listswap-wrap .listswap-controls{display: inline-block;width: 100%; margin-top:0px;}
+   .listswap-wrap .listswap-controls li{width: 100% !important;}
+   .tab_pnle_sec .custome_nav ul li{}
+
+   .tab_pnle_sec .listswap-controls .listswap-add{padding: 0px !important;}
+   .tab_pnle_sec .listswap-controls .listswap-remove{padding: 0px !important;}
+   .tab_pnle_sec .listswap-controls{padding: 0px !important;}
+   .listswap-list-wrap p{font-size: 14px;}
+
+   .form-control{height: 40px;}
+
+   .accordion .has-sub{border: 0px !important;}
+   .accordion .has-sub:hover{background: transparent !important;}
+   .accordion .has-sub .submenu-button{border: 0px !important;}
+   .accordion .has-sub .submenu-button:after{position: relative !important;content:inherit !important;}
+   .accordion .has-sub .submenu-button:before{position: relative !important;content:inherit !important;}
+   .accordion .has-sub .submenu-opened:after{background: transparent!important;}
+
+   .accordion .submenu.open{position: absolute !important;}
+   .accordion .submenu-button.submenu-opened{background: transparent !important;}
+   .accordion .submenu-button:before{background: transparent!important;}
+   .accordion .submenu-button:after{background: transparent!important;}
+   .container {max-width: 100%;}
+
+   /* 26-7-2019 all page css*/
+
+   .change_pass_sec h3 {font-size: 26px;}
+   .aboutus_detail_box .abt_header h5 {font-size: 20px;}
+   .logine_sec .login_img {width: 100%;height: 350px;}
+   .login_inner { padding: 40px;}
+   .facebook .bord .card.custome_nav_inner ul li{width: 85px;}
+   .add_excepion .delete {margin-top: 10px;float: right;}
+   .accent_plan .accent_title h1 {font-size: 24px;}
+   .accent_pricebox{padding: 40px 0;}
+   	.accent_pricebox .accent_box{min-height: 350px;}
+
+	/* 8-7-2019 */
+   	.reffer_and_earn h2 {font-size: 22px;}	
+   	.tym_table_Details h5{font-size: 16px;}
+   	.keywords_sec .alfa_key li{width: 34px !important;}
+   	.pagination .page-item {width: initial !important;}
+  	.keyword_table .table{overflow-x: scroll; width: 600px;}
+
+  	.form_dashboard .half_form { width: 100%;}
+
+  	.improve_two_sec .improve_box{margin-bottom: 30px;}
+  	.impv_btn_cent.right {top: initial;}
+  	.impv_btn_cent.right {right: -60px;}
+  	.impv_btn_cent{top: inherit;bottom: -10px;left: -40px;text-align: center;}
+  	.point_to_improve .improve_level .level_inline li{width: 100% !important;}
+  	#order_D .follow_list li a{float: right !important;}
+
+
+  	.desk_menu li:nth-child(1){border-top: 1px solid #cdcdcd !important;}
+  	.desk_menu .see_mob{border: 0px !important;}
+  	#cssmenu li ul li.active {background: #002e58 !important;}
+  	#cssmenu li ul li.active a{color: #fff !important;}
+
+  	.recruitment_margin ul.circle-list li{font-size: 14px;}
+  	.sub_page_header.rec { font-size: 18px;}
+  	.recruitment_margin h4 {font-size: 16px;}
+  	
+}
+
+@media screen and (max-width:639px){
+
+	.small .logo a {width: 90px;}
+	.form-group.half {width: 100%;padding-right: 0px;}
+	.form-group.half.padd {padding-right: 0px;padding-left: 0;}
+	.register_sec .register_inner{padding: 30px 40px;}
+	.form-group .checkcontainer {padding-right: 10px;}
+	.form_field{padding: 15px 0;}
+	.register_sec .register_inner {padding: 20px;}
+	.form-control{height: 40px;padding: 0 0px 0 10px;}
+	textarea {height: 90px;padding: 10px;}
+	textarea:focus{border: 1px solid #002e58;}
+	.menu_right .freetrial_btn{font-size: 12px;margin: 0 20px;}
+    .overlay a {font-size: 28px;}
+
+    .submit_btn
+    {
+		float: left;
+	    width: 100%;
+	    text-align: right;
+	    margin: 0 auto;
+	    padding-top: 20px;
+	}
+
+	.submit_register .btn_sub {float: left;}
+	.submit_register.change_pass .submit_btn.chnage_pass {float: left;width: auto;}
+	.submit_register.change_pass .submit_btn{float: right;width: auto;}
+	.profile_form.pro_information .submit_register {padding: 20px 0 0;}
+	.login_inner {padding: 35px;}
+	.add_excepion a {font-size: 14px;}
+	.tab_pnle_sec .custome_nav ul li {width: 125px;}
+	.logine_sec .login_img {height: 250px;}
+	.history_detail .tym_table_Details {width: 50%;}
+	.one_page_canvas .upload_folder .file_inner {float: left;width: 46%;margin-bottom: 10px;}
+	.form-group.lesson .form-control {width: 85%;}
+	.my_card_sec .card_title h3 {font-size: 22px;}
+
+
+}    
+
+@media screen and (max-width:479px){
+
+	.register_sec .register_inner h3 {font-size: 16px;}
+	#cssmenu {padding: 0px 0;}
+    .menu_right {margin-top: 12px;}
+    .accordion .link {padding: 5px 25px 5px 34px;}
+    .button{top: 5px;}
+    #cssmenu ul {margin: 5px 0 0;}
+    .see_mob .freetrial_btn{margin-top: 10px !important;margin-bottom: 0px;}
+
+	.small .button{height: 40px;}
+	.techregister_two select {font-size: 14px;}
+	.submit_register.change_pass .submit_btn.chnage_pass {float: left;width: 100%;}
+	.profile_sec .submit_register {padding: 5px 0 0;}
+	.profile_form.pro_information .submit_register {padding: 10px 0 0;}
+
+	.data_filter .btnsub_arr {padding: 10px 20px 10px 50px;}
+	.data_filter .btnsub_arr:after {top: 13px;font-size: 14px;left: 25px;}
+	.btnsub_arr{font-size: 12px;margin-top: 10px;}
+	.tab_pnle_sec {padding: 10px;}
+	.custome_nav .tab-content {margin-top: 20px;}
+	.nav>li>a{padding: 10px 10px;}
+
+	.login_img {height: 270px;}
+	.freetrial_btn {margin: 0 15px;top: 0px;}
+
+	.change_pass_sec .change_inner{padding: 20px 20px 40px;}
+	.change_pass_sec .btn_custon {margin-left: 8px;margin-top: 25px;}
+
+	.facebook .custome_nav_inner ul li {margin: 0 10px;}
+	.accent_pricebox .accent_box{min-height: 330px;}
+	.pages_table .page-link{width: 30px;height: 30px;line-height: 30px;}
+	.keywords_sec .alfa_key li {width: 25px !important;height: 25px;line-height: 25px;}
+	.one_page_canvas .card-header a{font-size: 14px;padding-right: 40px !important;}
+	.card-body{padding:0px 5px;}
+	.lesson_comment{padding: 0 10px 10px;}
+
+
+}
+
+@media screen and (max-width:360px){
+
+	.menu_right .freetrial_btn {font-size: 11px;margin: 0 2px;}
+	.small .logo a{margin-left: 0px;}
+	textarea { font-size: 12px;}
+	.add_btn {padding: 10px 30px;}
+	.button {width: 45px;}
+	.button {height: 35px;}
+	.sl-nav b{margin-top: 2px;display: inline-block;}
+	.btnsub_arr {padding: 10px 45px 10px 20px;font-weight: 600;font-size: 13px;}
+	.btnsub_arr:after{top: 21px;}
+
+	.login_inner h3 {font-size: 16px;padding: 10px 0;}
+	.logine_sec {margin-top: 0px;}
+	.login_img {height: 200px;}
+	.reset_pass span {font-size: 12px;margin-top: 15px;}
+	.login_inner h1 {font-size: 22px;}
+
+	.nav>li>a{padding: 10px 5px;}
+	.lesson_record_sec h4 {font-size: 12px;}
+	.header_span {font-size: 12px;}
+	.btnsub_arr {margin-top: 0px;}
+
+	.logine_sec .login_img {height: 200px;}
+	.facebook .custome_nav_inner {margin-top: 20px;}
+
+	.accent_plan .regular_course .coach_session p{font-size: 13px;}
+	.coach_session .add_cart{margin-top: 0px;}
+	.accent_plan .accent_title h1 {font-size: 20px;}
+
+}
+

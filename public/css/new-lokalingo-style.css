@@ -1,0 +1,1255 @@
+/*--------------------------------------------------------------# General--------------------------------------------------------------*/
+body {background: #fff;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif !important;font-weight: normal;font-style: normal;}
+html[lang="jp"] body {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif !important;font-weight: normal !important}
+a {color: #1bb1dc;transition: 0.5s;}
+a:hover, a:active, a:focus {color: #0a98c0;outline: none;text-decoration: none;}
+p {padding: 0;margin: 0 0 30px 0;}
+h1, h2, h3, h4, h5, h6 {font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;font-weight: normal;font-style: normal;margin: 0 0 20px 0;padding: 0;}
+html[lang="jp"] body h1, html[lang="jp"] body h2, html[lang="jp"] body h3, html[lang="jp"] body h4, html[lang="jp"] body h5, html[lang="jp"] body h6 {
+	font-family: 'hiragino_sans_gbw3', 
+	Helvetica, Arial, sans-serif;
+	/*font-weight: normal !important;*/
+}
+img {max-width: 100%;}
+.logo a img{width:auto !important;height:50px;}
+/* Back to top button */.back-to-top {position: fixed;display: none;background: #1bb1dc;color: #fff;width: 44px;height: 44px;text-align: center;line-height: 1;font-size: 16px;border-radius: 50%;right: 15px;bottom: 15px;transition: background 0.5s;z-index: 11;}
+.back-to-top i {padding-top: 12px;color: #fff;}
+/* Prelaoder */.container.main-container {padding-left: 0;padding-right: 0;max-width: 100%;overflow-x: hidden}
+#preloader {position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index: 9999;overflow: hidden;background: #fff;}
+#preloader:before {content: "";position: fixed;top: calc(50% - 30px);left: calc(50% - 30px);border: 6px solid #f2f2f2;border-top: 6px solid #1bb1dc;border-radius: 50%;width: 60px;height: 60px;-webkit-animation: animate-preloader 1s linear infinite;animation: animate-preloader 1s linear infinite;}
+@-webkit-keyframes animate-preloader{
+	0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes animate-preloader{
+	0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+/*--------------------------------------------------------------# Top Bar--------------------------------------------------------------*/
+#topbar {padding: 0 0 10px 0;font-size: 14px;transition: all 0.5s;}
+#topbar .social-links {text-align: right;}
+#topbar .social-links a {color: #535074;padding: 4px 12px;display: inline-block;line-height: 1px;}
+#topbar .social-links a:hover {color: #1bb1dc;}
+#topbar .social-links a:first-child {border-left: 0;}
+/*--------------------------------------------------------------# Header--------------------------------------------------------------*/
+header{z-index:9999}
+#header {height:auto;transition: all 0.5s;z-index: 997;transition: all 0.5s;padding: 20px 0;position: fixed;left: 0;top: 0;right: 0;transition: all 0.5s;z-index: 997;background-color: #fff}
+#header.header-scrolled, #header.header-pages, #header.header-shrink {height: 70px !important;padding: 15px 0 !important;background-color: #fff !important;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3) !important;}
+#header.header-scrolled #topbar, #header.header-pages #topbar, #header.header-shrink #topbar, #header.header-pages #topbar {display: none;}
+#header .logo h1 {font-size: 36px;margin: 0;padding: 0;line-height: 1;font-weight: normal;letter-spacing: 3px;text-transform: uppercase;}
+#header .logo h1 a, #header .logo h1 a:hover {color: #413e66;text-decoration: none;}
+#header .logo img {padding: 0;margin: 7px 0;max-height: 26px;}
+.main-pages {margin-top: 60px;}
+/*--------------------------------------------------------------# Intro Section--------------------------------------------------------------*/
+#intro {width: 100%;height: 100vh;position: relative;background: #f5f8fd url(../images/girl.jpg) center top no-repeat;background-size: cover;position: relative;margin-top: -100px;}
+#intro .w100per {width: 100%}
+#intro .intro-info h2 {color: #505050;margin-bottom: 40px;font-size: 54px;line-height: 66px;font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;}
+#intro .intro-info h2 + div + h2 {position: relative;top: 35px;}
+html[lang="jp"] body #intro .intro-info h2 {font-size: 48px;line-height: 58px;font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;}
+#intro .intro-info h2 span {color: #505050;font-size: 36px;font-weight: normal;font-style: normal;/*font-family: 'helveticaneuemedium';*/font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+html[lang="jp"] body #intro .intro-info h2 span {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: normal}
+#intro .intro-info .book-lesson {padding: 15px 25px;font-size: 36px;font-weight: 500;line-height: 42px;color: #FFFFFF;background: linear-gradient(180deg, #FF5123 0%, #FF8949 100%);box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;}
+#intro .intro-info .book-lesson:hover {background: linear-gradient(180deg, #FF8949 0%, #FF5123 100%);}
+/*--------------------------------------------------------------# Navigation Menu--------------------------------------------------------------*/
+/* Desktop Navigation */
+.main-nav {/* Drop Down *//* Deep Drop Down */}
+.main-nav, .main-nav * {margin: 0;padding: 0;list-style: none;}
+.main-nav > ul {text-align: center}
+.main-nav > ul > li {position: relative;white-space: nowrap;float: none;display: inline-block;padding: 10px 0 0 0;}
+.main-nav > ul > li.account, .main-nav > ul > li.one-page, .main-nav > ul > li.logout, .main-nav > ul > li.book_a_lesson {position: fixed;top: 2px;right: 10px;z-index: 999}
+.main-nav > ul > li.one-page {right: 135px;}
+.main-nav > ul > li.book_a_lesson {right: 265px}
+.main-nav > ul.inner-page-menu > li.account {right: 110px;}
+.main-nav > ul.inner-page-menu > li.one-page {right: 230px;}
+.main-nav > ul.inner-page-menu > li.logout {right: 10px;text-transform: capitalize;}
+.main-nav > div.logout {right: 30px;text-transform: capitalize;}
+html[lang="jp"] body .main-nav > ul > li.account, html[lang="jp"] body .main-nav > ul > li.one-page, html[lang="jp"] body .main-nav > ul > li.logout, html[lang="jp"] body .main-nav > ul > li.book_a_lesson {position: fixed;top: 2px;right: 10px;z-index: 999}
+html[lang="jp"] body .main-nav > ul > li.one-page {right: 155px;}
+html[lang="jp"] body .main-nav > ul > li.book_a_lesson {right: 283px}
+html[lang="jp"] body .main-nav > ul.inner-page-menu > li.account {right: 150px;}
+html[lang="jp"] body .main-nav > ul.inner-page-menu > li.one-page {right: 300px;}
+html[lang="jp"] body .main-nav > ul.inner-page-menu > li.logout {right: 10px;text-transform: capitalize;}
+html[lang="jp"] body div.logout {right: 10px;text-transform: capitalize;}
+html[lang="jp"] body.admin-bar .main-nav > ul > li.account, html[lang="jp"] body.admin-bar .main-nav > ul > li.one-page, html[lang="jp"] body.admin-bar .main-nav > ul > li.logout, html[lang="jp"] body.admin-bar .main-nav > ul > li.book_a_lesson {top: 34px;}
+body.admin-bar .main-nav > ul > li.account, body.admin-bar .main-nav > ul > li.one-page, body.admin-bar .main-nav > ul > li.logout {top: 34px;}
+body.admin-bar .mobile-nav-toggle {top: 30px;}
+body.admin-bar div.logout {right: 30px;text-transform: capitalize;}
+.main-nav > ul > li.book-lesson {display: none}
+.main-nav a {display: block;position: relative;color: #505050;padding: 10px 15px;transition: 0.3s;font-size: 24px;font-family: 'helveticaneuelight';font-weight: normal;font-style: normal;text-transform: none;}
+html[lang="jp"] body .main-nav a {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: normal}
+.main-nav a:hover, .main-nav .active > a, .main-nav li:hover > a {color: #168cc7;text-decoration: none;}
+.main-nav .drop-down ul {display: block;position: absolute;left: 0;top: calc(100% - 30px);z-index: 99;opacity: 0;visibility: hidden;padding: 10px 0;background: #fff;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);transition: ease all 0.3s;}
+.main-nav .drop-down:hover > ul {opacity: 1;top: 100%;visibility: visible;}
+.main-nav .drop-down li {min-width: 180px;position: relative;}
+.main-nav .drop-down ul a {padding: 10px 20px;font-size: 16px;font-family: 'helveticaneuebold', Helvetica, Arial, sans-serif;font-weight: normal;font-style: normal;text-transform: none;color: #065e77;}
+html[lang="jp"] body .main-nav .drop-down ul a {font-family: 'hiragino_sans_gbw6', Helvetica, Arial, sans-serif;font-weight: 700}
+.main-nav .drop-down ul a:hover, .main-nav .drop-down ul .active > a, .main-nav .drop-down ul li:hover > a {color: #1bb1dc;}
+.main-nav .drop-down > a:after {content: "\f107";font-family: FontAwesome;padding-left: 10px;}
+.main-nav .drop-down .drop-down ul {top: 0;left: calc(100% - 30px);}
+.main-nav .drop-down .drop-down:hover > ul {opacity: 1;top: 0;left: 100%;}
+.main-nav .drop-down .drop-down > a {padding-right: 35px;}
+.main-nav .drop-down .drop-down > a:after {content: "\f105";position: absolute;right: 15px;}
+.main-nav > ul > li.casual_conversation, .main-nav > ul > li.aspire_text, .main-nav > ul > li.super_kids, .main-nav > ul > li.free-demo {display: none}
+/* Mobile Navigation */
+.mobile-nav {position: fixed;top: 0;bottom: 0;z-index: 9999;overflow-y: auto;left: -260px;width: 260px;padding-top: 18px;background: rgba(40, 38, 70, 0.8);transition: 0.4s;}
+.mobile-nav * {margin: 0;padding: 0;list-style: none;text-transform: capitalize;}
+.mobile-nav a {display: block;position: relative;color: #fff;padding: 10px 20px;font-weight: normal;}
+.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {color: #8dc2fa;text-decoration: none;}
+.mobile-nav .drop-down > a:after {content: "\f078";font-family: FontAwesome;padding-left: 10px;position: absolute;right: 15px;}
+.mobile-nav .active.drop-down > a:after {content: "\f077";}
+.mobile-nav .drop-down > a {padding-right: 35px;}
+.mobile-nav .drop-down ul {display: none;overflow: hidden;}
+.mobile-nav .drop-down li {padding-left: 20px;}
+.mobile-nav-toggle{position:fixed;right:0;top:0;z-index:9998;border:0;background:none;font-size:24px;transition:all 0.4s;outline:none !important;line-height:1;cursor:pointer;text-align:right;}
+.mobile-nav-toggle i {margin: 18px 18px 0 0;color: #065e77;}
+.mobile-nav-overly {width: 100%;height: 100%;z-index: 9997;top: 0;left: 0;position: fixed;background: rgba(40, 38, 70, 0.8);overflow: hidden;display: none;}
+.mobile-nav-active {overflow: hidden;}
+.mobile-nav-active .mobile-nav {left: 0;}
+.mobile-nav-active .mobile-nav-toggle i {color: #fff;}
+/*--------------------------------------------------------------# Sections--------------------------------------------------------------*/
+/* Sections Header--------------------------------*/
+.business_sec_new h5 {font-size: /*55px*/ 48px;color: #505050;text-align: center;position: relative;font-family: "helveticaneuemedium", Helvetica, Arial, sans-serif;margin-bottom: 40px;font-weight: normal;font-style: normal;}
+html[lang="jp"] body .section-header h3 {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: 500 !important;font-size: 42px;}
+
+/* Section with background--------------------------------*/
+.section-bg {background: #f5f8fd;}
+/* One Page Canvas Section--------------------------------*/
+.global-services {padding: 80px 0;}
+.global-services .about-content {padding-top: 40px;}
+.global-services .about-content h3 {font-size: 36px;line-height: 46px;display: flex;align-items: center;text-align: center;color: #ED1E68;font-weight: normal}
+.global-services .about-content p {font-size: 25px;line-height: 36px;text-align: center;color: #505050;font-weight: normal;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+html[lang="jp"] body .global-services .about-content p {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: normal !important;font-size: 24px;}
+.global-services .about-img {position: relative;margin: 30px 30px 30px 30px;}
+.global-services .about-img img {width: 100%;border: 8px solid #fff;transition: .5s;}
+.global-services .about-img img:hover {width: 100%;-webkit-transform: scale(1.03);transform: scale(1.03);}
+.global-services .more {margin: 0px 0;}
+.global-services .more a {display: inline-block;background: linear-gradient(180deg, #ED1E68 0%, #F45BB9 100%);box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;padding: 5px 15px;font-size: 25px;line-height: 31px;color: #FFFFFF;}
+/* Services Section--------------------------------*/
+.global-services {padding: 60px 0 40px 0;}
+.global-services .box {padding: 30px;margin: 0 10px 40px 10px;transition: all 0.3s ease-in-out;text-align: center;min-height: 265px;}
+/*html[lang="jp"] .global-services .box{min-height: 327px !important;}*/
+.global-services .box.working-prof {background: linear-gradient(180deg, #168CC7 0%, rgba(22, 140, 199, 0.503415) 100%);border: 0px solid #979797;box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;}
+.global-services .box.for-casual{background:linear-gradient(180deg, #17AA87 0%, rgba(23, 170, 135, 0.499454) 100%);border:0px solid #979797;box-shadow:0px 20px 40px rgba(0, 0, 0, 0.5);border-radius:8px;}
+.global-services .box.for-super-kids{background:linear-gradient(180deg, #ED1E68 0%, rgba(237, 30, 104, 0.504234) 100%);border:0px solid #979797;box-shadow:0px 20px 40px rgba(0,0,0,0.5);border-radius: 8px;}
+.global-services .box:hover {-webkit-transform: scale(1.1);transform: scale(1.1);}
+.global-services .icon {margin: 0 auto 15px auto;padding-top: 12px;display: inline-block;text-align: center;border-radius: 50%;width: 60px;height: 60px;}
+.global-services .icon i {font-size: 36px;line-height: 1;}
+.global-services .title {font-weight: 700;margin-bottom: 15px;font-size: 18px;}
+.global-services .title a {color: #fff;font-size: 32px;font-weight: normal;font-family: "helveticaneuemedium", Helvetica, Arial, sans-serif;text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);}
+html[lang="jp"] body .global-services .title a {font-weight: 500;font-size: 30px}
+.global-services .box.for-super-kids .title a {line-height: 56px;}
+.global-services .box:hover .title a {color: #fff;}
+.global-services .description {font-size: 24px;line-height: 36px;margin-bottom: 0;text-align: center; /**/font-family: "helveticaneuelight", Helvetica, Arial, sans-serif;font-style: normal;font-weight: normal/**/}
+html[lang="jp"] body .global-services .description {font-size: 24px;line-height: 32px;}
+.global-services .more {margin: 40px 0;}
+.global-services .more a {display: inline-block;background: linear-gradient(180deg, #ED1E68 0%, #F45BB9 100%);border-radius: 8px;padding: 5px 15px;font-size: 25px;line-height: 31px;color: #FFFFFF;box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);}
+/* Lessons Anywhere Section--------------------------------*/
+#lessons-anywhere {padding: 60px 0 40px 0;}
+#lessons-anywhere .box {padding: 30px;margin: 0 10px 40px 10px;transition: all 0.3s ease-in-out;text-align: center;min-height: 265px;}
+#lessons-anywhere .box.working-prof {background: linear-gradient(180deg, #168CC7 0%, rgba(22, 140, 199, 0.503415) 100%);border: 0px solid #979797;box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;}
+#lessons-anywhere .box.for-casual {background: linear-gradient(180deg, #17AA87 0%, rgba(23, 170, 135, 0.499454) 100%);border: 0px solid #979797;box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;}
+#lessons-anywhere .box:hover {-webkit-transform: scale(1.1);transform: scale(1.1);}
+#lessons-anywhere .icon {margin: 0 auto 15px auto;padding-top: 12px;display: inline-block;text-align: center;border-radius: 50%;width: 60px;height: 60px;}
+#lessons-anywhere .icon i {font-size: 36px;line-height: 1;}
+#lessons-anywhere .title {font-weight: 700;margin-bottom: 15px;font-size: 18px;}
+#lessons-anywhere .title a {color: #fff;font-size: 32px;font-weight: normal;font-family: "helveticaneuemedium", Helvetica, Arial, sans-serif;text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);}
+html[lang="jp"] body #lessons-anywhere .title a {font-size: 30px;font-weight: 500;}
+#lessons-anywhere .box.for-super-kids .title a {line-height: 56px;}
+#lessons-anywhere .box:hover .title a {color: #fff;}
+#lessons-anywhere .description {font-size: 24px;line-height: 36px;margin-bottom: 0;text-align: center;}
+html[lang="jp"] body #lessons-anywhere .description {font-size: 24px;line-height: 32px;}
+#lessons-anywhere .more {margin: 40px 0;}
+#lessons-anywhere .more a {display: inline-block;background: linear-gradient(180deg, #ED1E68 0%, #F45BB9 100%);border-radius: 8px;padding: 5px 15px;font-size: 25px;line-height: 31px;color: #FFFFFF;box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);}
+/* Amazing Language Partners Section--------------------------------*/
+#amazing-language-partners {padding: 60px 0 40px 0;}
+#amazing-language-partners .title a, #amazing-language-partners h2.team-title span {color: #505050; /*font-size:32px;font-weight:600;*/}
+#amazing-language-partners .box.for-super-kids .title a {line-height: 56px;}
+#amazing-language-partners .box:hover .title a {color: #505050;}
+#amazing-language-partners .description {font-size: 26px;line-height: 36px;margin-bottom: 0;text-align: center;height: 150px;overflow: hidden;}
+html[lang="jp"] body #amazing-language-partners .description {font-size: 24px;line-height: 32px;}
+#amazing-language-partners .more {margin: 40px 0;}
+#amazing-language-partners .more a {display: inline-block;background: linear-gradient(180deg, #ED1E68 0%, #F45BB9 100%);box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;padding: 5px 15px;font-size: 25px;line-height: 31px;color: #FFFFFF;}
+#amazing-language-partners .footer {margin-top: 30px !important;text-align: left}
+#amazing-language-partners .footer .img-container {border-radius: 50%;width: 70px;height: 70px;overflow: hidden;}
+#amazing-language-partners .footer span {font-size: 22px;line-height: 27px;font-weight: 600;color: #505050;}
+#amazing-language-partners .footer .teacher-part {margin-left: -20px;}
+#amazing-language-partners .footer .teacher-part img {height: 26px !important}
+#amazing-language-partners .team-member article {/*overflow: hidden;float: left;margin: 0 20px;vertical-align: top;*/overflow: hidden;float: none;margin: 0 20px;vertical-align: top;display: inline-block}
+#amazing-language-partners .team-member article .contents{width: 250px;overflow: hidden;}
+.team-plus-icon:hover .curtain{visibility: visible;opacity: 1;}
+.single-image{position:relative;display:block;margin:0;cursor:pointer;font-size:0;-webkit-backface-visibility: hidden;-ms-backface-visibility:hidden;backface-visibility:hidden;}
+.team-plus-icon:hover .curtain::after{position:absolute;left:50%;top:50%;display:block;margin:-30px 0 0 -30px;width:60px;height:60px;color:#fff;text-align: center;font-family: 'FontAwesome';line-height:60px;-webkit-border-radius:50%;border-radius:50%;-webkit-transition:all .3s ease-in;transition:all .3s ease-in;background-color:#002E58;background-color:rgba(0,46,88,0.8);font-size:28px;content:'\f067';}
+
+/* Flexible Pricing Section--------------------------------*/
+#flexible-pricing {padding: 60px 0 40px 0;background: transparent url(../images/wave3.png) center center no-repeat;/*margin-left: -15px;margin-right: -15px*/}
+#flexible-pricing .container {background-color: transparent !important}
+#flexible-pricing .box {padding: 30px;margin: 0 10px 40px 10px;transition: all 0.3s ease-in-out;text-align: center;min-height: 305px;background: #FFFFFF;border: 0px solid #979797;box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;}
+#flexible-pricing .box:hover {-webkit-transform: scale(1.1);transform: scale(1.1);}
+#flexible-pricing .icon {margin: 0 auto 15px auto;padding-top: 12px;display: inline-block;text-align: center;border-radius: 50%;width: 60px;height: 60px;}
+#flexible-pricing .icon i {font-size: 36px;line-height: 1;}
+#flexible-pricing .title {font-weight: 700;margin-bottom: 15px;font-size: 18px;}
+#flexible-pricing .title a {color: #505050;font-size: 32px;font-weight: normal;font-family: "helveticaneuemedium", Helvetica, Arial, sans-serif;}
+html[lang="jp"] body #flexible-pricing .title a {font-weight: 500;font-size: 30px;}
+#flexible-pricing .box:hover .title a {color: #505050;}
+#flexible-pricing .description {font-size: 24px;line-height: 36px;margin-bottom: 0;text-align: center;}
+html[lang="jp"] body #flexible-pricing .description {font-size: 24px;line-height: 32px;;}
+#flexible-pricing .more {margin: 40px 0;}
+#flexible-pricing .more a {display: inline-block;background: linear-gradient(180deg, #ED1E68 0%, #F45BB9 100%);box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;padding: 5px 15px;font-size: 25px;line-height: 31px;color: #FFFFFF}
+
+/* What Our Learner Says Section--------------------------------*/
+#our-learner {padding: 60px 0 40px 0;}
+#our-learner .box {padding: 30px !important;margin: 0 10px 40px 10px !important;transition: all 0.3s ease-in-out !important;text-align: center !important;min-height: 265px !important;background: #FFFFFF !important;border: 0px solid #979797 !important;box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5) !important;border-radius: 8px !important;}
+#our-learner .box.test-section {cursor: pointer}
+#our-learner .box:hover {-webkit-transform: scale(1.1);transform: scale(1.1);}
+#our-learner .icon {margin: 0 auto 15px auto;padding-top: 12px;display: inline-block;text-align: center;border-radius: 50%;width: 60px;height: 60px;}
+#our-learner .icon i {font-size: 36px;line-height: 1;}
+#our-learner .box.for-super-kids .title a {line-height: 56px;}
+#our-learner .box:hover .title a {color: #fff;}
+#our-learner .description {font-size: 24px !important;line-height: 36px !important;margin-bottom: 0;text-align: center;height: 190px;color: #444 !important;overflow: hidden;font-weight: normal;font-family: "helveticaneuelight", Helvetica, Arial, sans-serif;position: relative}
+#our-learner .description p + p:after {position: absolute;content: "...";font-size: 24px;background-color: #fff;right: 0;bottom: 0;z-index: 9999;width: 40px;}
+html[lang="jp"] body #our-learner .description {font-size: 24px;line-height: 32px;}
+#our-learner .description p {margin-bottom: 0;font-size: 24px !important;line-height: 36px !important;margin-bottom: 0;text-align: center;height: 190px;color: #444 !important;overflow: hidden;font-weight: normal;font-family: "helveticaneuelight", Helvetica, Arial, sans-serif;position: relative}
+html[lang="jp"] body #our-learner .description p {line-height: 1.6}
+#our-learner .more {margin: 40px 0;}
+#our-learner .more a {display: inline-block;background: linear-gradient(180deg, #ED1E68 0%, #F45BB9 100%);box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;padding: 5px 15px;font-size: 25px;line-height: 31px;color: #FFFFFF;}
+#our-learner .footer {margin-top: 30px !important;text-align: left}
+@media (min-width:100px) {
+	#our-learner .footer .col-md-4.col-lg-4{max-width: 100% !important;text-align: center !important;flex: 0 0 100%;}
+	}
+#our-learner .footer .img-container {border-radius: 50%;width: 70px;height: 70px;overflow: hidden;margin: 0 auto}
+#our-learner .footer span {font-size: 22px;line-height: 27px;font-weight: normal;font-family: "helveticaneuemedium", Helvetica, Arial, sans-serif;color: #505050;position: relative;top: 8px;}
+html[lang="jp"] body #our-learner .footer span {font-weight: 500;}
+#our-learner .footer .teacher-part {margin-left: -20px;}
+#our-learner .footer .teacher-part .quote-author {height: 60px;overflow: hidden;}
+/* What Our Learner Says Section--------------------------------*/
+/* Book A Lesson--------------------------------*/
+#book-lesson {padding: 60px 0 40px 0;}
+#book-lesson .book-lesson {padding: 15px 25px;font-size: 36px;font-weight: 500;line-height: 42px;color: #FFFFFF;background: linear-gradient(180deg, #FF5123 0%, #FF8949 100%);box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;}
+#book-lesson .book-lesson:hover {background: linear-gradient(180deg, #FF8949 0%, #FF5123 100%);}
+#book-lesson .count-box {width: 500px;margin: 100px auto 0;position: relative;display: block;text-align: center;max-width: 100%;}
+#book-lesson .count-box .section {float: left;width: 33.33%;text-align: center;justify-content: center;display: block;}
+#book-lesson .count-box .count-circle {background: #D8D8D8;border: 1px solid #979797;width: 50px;height: 50px;display: block;border-radius: 50%;margin: 0 auto 30px;font-size: 32px;line-height: 46px;color: #fff;font-weight: normal;font-family: "helveticaneuemedium", Helvetica, Arial, sans-serif;position: relative;}
+#book-lesson .count-box:before {content: "";height: 4px;background: #D8D8D8;position: absolute;width: 310px;left: 94px;top: 45px;}
+#book-lesson .count-box a {font-size: 30px;line-height: 35px;color: #505050;font-weight: normal;font-family: "helveticaneuemedium", Helvetica, Arial, sans-serif;display: block;}
+html[lang="jp"] body #book-lesson .count-box a {font-weight: 500;}
+#book-lesson .count-box a span {font-weight: 500;}
+
+html[lang="jp"] body #book-lesson .count-box a span {font-weight: 500;}
+/* Footer Banner --------------------------------*/
+#footer-banner {padding: 60px 0 0px 0;}
+/*--------------------------------------------------------------# Footer--------------------------------------------------------------*/
+#footer {padding: 0 0 30px 0;font-size: 14px;background-color: #fff !important;position: relative;bottom: auto;left: auto;background: transparent;}
+#footer .footer-top {padding: 60px 0 0px 0;}
+#footer .footer-top .footer-info {margin-bottom: 30px;}
+#footer .footer-top .footer-links {margin-bottom: 30px;}
+#footer .footer-top .footer-links ul {list-style: none;padding: 0;margin: 0;}
+#footer .footer-top .footer-links ul li {padding: 8px 0;font-size: 22px;font-weight: normal;color: #1A1A1A;}
+html[lang="jp"] body #footer .footer-top .footer-links ul li {font-weight: 500;}
+#footer .footer-top .footer-links ul li:first-child {padding-top: 0;}
+#footer .footer-top .footer-links ul a {color: #1A1A1A;}
+#footer .footer-top .footer-links ul a:hover {color: #1A1A1A;}
+#footer .footer-top .social-links {margin-bottom: 50px;}
+#footer .footer-top .social-links a {font-size: 26px;display: inline-block;background: transparent;color: #000;border: 2px solid #000000;line-height: 1;padding: 8px 0;margin-right: 4px;border-radius: 50%;text-align: center;width: 44px;height: 44px;transition: 0.3s;margin: 0 10px;font-weight: bold;}
+#footer .footer-top .social-links a:hover {border: 2px solid #168CC7;color: #168CC7;}
+#footer .comming-soon {margin-top: 40px;font-size: 36px;font-weight: normal;line-height: 42px;color: #505050;}
+.copyright {text-align: center;color: #1a1a1a;font-size: 18px;font-weight: 600;padding:10px 0;display:block;width:100%}
+/*--------------------------------------------------------------# Responsive Media Queries--------------------------------------------------------------*/
+@media (min-width: 991px) {#call-to-action .cta-btn-container {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: end;-webkit-justify-content: flex-end;-ms-flex-pack: end;justify-content: flex-end;}
+}
+@media (min-width: 992px) {#intro .intro-info {padding-top: 220px;}
+#testimonials .testimonial-item p {width: 80%;}
+}
+@media (max-width: 991px) {#topbar {display: none;}
+#header {height: 70px;padding: 15px 0;}
+#header .logo h1 {font-size: 28px;padding: 8px 0;}
+#why-us .why-us-content {padding-top: 30px;}
+#pricing {padding-bottom: 30px;}
+#pricing .card {margin-bottom: 50px;}
+}
+@media (max-width: 767px) {#header .logo img {position: relative;top: -10px;}
+#intro {height: auto;padding: 40px 0 40px 0;margin-top:-40px}
+#intro .container {height: auto !important;background-size: 100%;}
+#intro .intro-img {width: 80%;}
+#intro .intro-info {text-align: center;padding-top: 40px;line-height: normal;}
+#intro .intro-info h2, html[lang="jp"] body #intro .intro-info h2 {margin-top: 30px;margin-bottom: 10px;line-height: normal;font-size: 18px;}
+#intro .intro-info h2 span,  html[lang="jp"] body #intro .intro-info h2 span {font-size: 16px;}
+#intro .intro-info h2, html[lang="jp"] body #intro .intro-info h2 + div + h2{margin-top: 10px;}
+.section-header p {width: 100%;}
+.section-header h3, html[lang="jp"] body .section-header h3 {font-size: 18px;}
+.global-services .title a, html[lang="jp"] body .global-services .title a {font-size: 18px;}
+.global-services .box.for-super-kids .title a {line-height: 1.2}
+.description, html[lang="jp"] body .description {font-size: 16px !important;line-height: 24px !important;min-height: 50px !important}
+.global-services {padding: 60px 0 0px 0;}
+.global-services {padding: 40px 0;}
+.global-services .about-content {padding-top: 0;}
+.global-services .about-content h3, html[lang="jp"] body .global-services .about-content h3 {font-size: 18px;line-height: 26px;text-align: center;justify-content: center;}
+.global-services .about-content p, html[lang="jp"] body .global-services .about-content p {font-size: 16px;line-height: 24px;margin-bottom: 20px;}
+#amazing-language-partners .footer .col-md-4.col-lg-4, #our-learner .footer .col-md-4.col-lg-4 {width: 40%;float: left}
+#amazing-language-partners .footer .teacher-part, #our-learner .footer .teacher-part {width: 60%;float: left}
+#amazing-language-partners .title a, #flexible-pricing .title a, #lessons-anywhere .title a, html[lang="jp"] body #amazing-language-partners .title a, html[lang="jp"] body #flexible-pricing .title a, html[lang="jp"] body #lessons-anywhere .title a {font-size: 18px;line-height: 26px;}
+#amazing-language-partners {padding: 0px 0 40px 0;}
+#flexible-pricing {padding: 0px 0 40px 0;}
+#our-learner {padding: 0px 0 40px 0;}
+#footer-banner {padding: 0px 0 0px 0;}
+.footer-top .col-lg-6.text-right {text-align: left !important}
+.global-services .box, #lessons-anywhere .box, #amazing-language-partners .box, #our-learner .box, #flexible-pricing .box {min-height: 120px;}
+#our-learner .box .text-left img {width: 40px;}
+#footer .footer-top .footer-links ul li, html[lang="jp"] body #footer .footer-top .footer-links ul li {font-size: 18px;padding: 5px 0;}
+#intro .intro-info .book-lesson, html[lang="jp"] body #intro .intro-info .book-lesson {padding: 10px 15px;font-size: 16px;}
+#book-lesson .book-lesson, html[lang="jp"] body #book-lesson .book-lesson {padding: 10px 15px;font-size: 22px;}
+#footer .comming-soon {margin-bottom: 40px;}
+section {display: block;width: 100%;}
+#book-lesson .count-box, .staff-members {width: 100% !important;}
+.staff-members .team-member.mobile-only, .staff-members .team-member.mobile-only .team-contents {width: 100% !important;}
+.staff-members .team-member.mobile-only .team-contents article.col-md-6.col-lg-4 {width: 100% !important;}
+}
+/* Samsung Galaxy S5 landscape */
+@media (width:640px) {#intro {height: 100vh !important;}
+#intro .intro-info {padding-top: 100px;}
+}
+@media (max-width: 574px) {#book-lesson .count-box:before {display: none}
+#book-lesson .count-box .section {float: none;width: 100%;margin-bottom: 40px;}
+#book-lesson .count-box {margin: 40px 0;}
+#book-lesson .count-box .count-circle {margin: 0 auto 20px}
+#footer .footer-top .social-links a {margin-bottom: 25px;}
+}
+@media (min-width: 1200px) {.container {max-width: 1240px;}
+}
+@media (min-width: 768px) and (max-width: 1024px) {#intro .intro-info {padding-top: 140px;}
+#intro {height: auto;min-height: 450px;}
+#intro .intro-info h2,  html[lang="jp"] body #intro .intro-info h2 {font-size: 45px;line-height: 56px;}
+#intro .intro-info h2 span,  html[lang="jp"] body #intro .intro-info h2 span {font-size: 30px;}
+.section-header h3,  html[lang="jp"] body .section-header h3 {font-size: 45px;line-height: 56px;}
+.global-services .box,  #lessons-anywhere .box,  #amazing-language-partners .box,  #our-learner .box,  #flexible-pricing .box {padding: 30px 10px;min-height: 220px;}
+.global-services .title a,  #lessons-anywhere .title a,  #amazing-language-partners .title a,  #flexible-pricing .title a,  html[lang="jp"] body #intro {font-size: 26px;}
+html[lang="jp"] body .global-services .title a,  html[lang="jp"] body #lessons-anywhere .title a,  html[lang="jp"] body #amazing-language-partners .title a,  html[lang="jp"] body #flexible-pricing .title a,  html[lang="jp"] body #intro {font-size: 24px;}
+.global-services,  #our-learner {padding: 0px 0 60px;}
+#amazing-language-partners,  #flexible-pricing {padding: 0px 0 40px 0;background-size: 100%;}
+.global-services .about-content h3,  html[lang="jp"] body .global-services .about-content h3 {font-size: 28px;line-height: 36px;}
+.global-services .about-content p,  html[lang="jp"] body .global-services .about-content p {font-size: 20px;line-height: 32px;margin-bottom: 15px;}
+#our-learner .box .text-left img {width: 40px;}
+.global-services .col-md-3 {-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;}
+.global-services .about-img {position: relative;margin: 30px 0px 30px 0px;}
+.global-services .description,  #lessons-anywhere .description,  #flexible-pricing .description,  html[lang="jp"] body .global-services .description,  html[lang="jp"] body #lessons-anywhere .description,  html[lang="jp"] body #flexible-pricing .description, {font-size: 22px;line-height: 28px;}
+#lessons-anywhere .offset-md-2,  #flexible-pricing .offset-md-2 {margin-left: 0%;}
+#footer .col-lg-6 {width: 50%;}
+}
+@media (min-width: 992px) and (max-width: 1024px) {#intro {height: auto;min-height: 570px;}
+#intro .intro-info {padding-top: 220px;}
+.global-services .col-md-3 {-ms-flex: 0 0 40%;flex: 0 0 40%;max-width: 40%;}
+.global-services .col-lg-8 {-ms-flex: 0 0 60%;flex: 0 0 60%;max-width: 60%;}
+.global-services .about-content h3,  html[lang="jp"] body .global-services .about-content h3 {font-size: 32px;line-height: 42px;}
+.global-services .about-content p,  html[lang="jp"] body .global-services .about-content p {font-size: 22px;line-height: 32px;margin-bottom: 15px;}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {#intro {height: auto;min-height: 570px !important;}
+#intro .intro-info {padding-top: 220px !important;}
+}
+/* Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {#intro {height: auto;min-height: 600px;}
+#intro .intro-info h2,  html[lang="jp"] body #intro .intro-info h2 {font-size: 45px;line-height: 56px;}
+#intro .intro-info h2 span,  html[lang="jp"] body #intro .intro-info h2 span {font-size: 30px;}
+.section-header h3,  html[lang="jp"] body .section-header h3 {font-size: 45px;line-height: 56px;}
+.global-services .box,  #lessons-anywhere .box,  #amazing-language-partners .box,  #our-learner .box {padding: 30px 10px;}
+.global-services .title a,  #lessons-anywhere .title a,  #amazing-language-partners .title a,  #flexible-pricing .title a,  html[lang="jp"] body #intro {font-size: 26px;}
+html[lang="jp"] body .global-services .title a,  html[lang="jp"] body #lessons-anywhere .title a,  html[lang="jp"] body #amazing-language-partners .title a,  html[lang="jp"] body #flexible-pricing .title a {font-size: 24px;}
+.global-services,  #our-learner {padding: 0px 0;}
+#amazing-language-partners,  #flexible-pricing {padding: 0px 0 40px 0;background-size: 100%;}
+.global-services .about-content h3,  html[lang="jp"] body .global-services .about-content h3 {font-size: 28px;line-height: 36px;}
+.global-services .about-content p,  html[lang="jp"] body .global-services .about-content p {font-size: 22px;line-height: 28px;margin-bottom: 15px;}
+#our-learner .box .text-left img {width: 40px;}
+}
+/* Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {#intro {height: auto;min-height: 790px;}
+#intro .intro-info {padding-top: 310px;}
+#flexible-pricing {background-size: 100%;}
+}
+section {width: 100%;}
+/* New style for replace old */
+.new-page-design #content {padding-top: 0 !important}
+.new-page-design .video-full-container {height: auto !important;}
+.new-page-design .video-full-container .video-full-entry {padding: 0 !important}
+.team-member article:hover .team-group h2.team-title span {color: #fff}
+#amazing-language-partners .team-member article:hover h2.team-title span {color: #fff}
+.new-page-design .team-nav {display: none}
+td div.fav-cal-icons {display: inline;}
+td div.fav-cal-icons .fa.fa-heart {color: #002E58;font-size: 20px;padding-left: 10px;}
+.custom-teacher-profile .custom-tabs > li:last-child {border-radius: 6px;}
+.woocommerce ul.products li.product {width: calc(33% - 10px) !important;}
+.woocommerce ul.products li.product {margin: 0 5px 1% 5px !important;}
+.woocommerce ul.products li.product:nth-child(4n+1),  .woocommerce-page ul.products li.product:nth-child(4n+1) {margin-left: 5px !important;}
+.woocommerce ul.products li.product p {margin: 0 0 60px 0;}
+.one-page-table-block tr td.capitalize a {color:/*#002E58*/#5b5e60}
+/* ASPIRE PAGE STYLE */
+.global-services {padding: 60px 0 40px 0;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+.global-services.mt-10 {margin-top: -140px}
+.global-services.subscription {margin-top: 0;padding: 0 0 20px;}
+.global-services.subscription p {font-size: 18px;margin-bottom: 10px;line-height: normal;opacity: .8;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+html[lang="jp"] body .global-services p {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: normal}
+.global-services .container {background: #fff;padding: 0 15px;border-radius: 8px;font-size: 22px;line-height: 30px;color: #444;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+html[lang="jp"] body .global-services .container {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;}
+html[lang="jp"] body .desc_text_new,  html[lang="jp"] body .video-full-entry {text-align: left !important;font-size: 22px;font-weight: normal;font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;}
+.desc_text_new p {font-size: 22px;line-height: 1.5;margin-bottom: 15px;text-align: left !important;color: #444;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+html[lang="jp"] body .desc_text_new p {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: 500;font-size: 22px}
+.desc_text_new ul {list-style: disc outside !important;margin-left: 40px;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif !important;font-size: 22px;line-height: 1.5;}
+.desc_text_new ul li {list-style: disc outside !important;}
+html[lang="jp"] body .desc_text_new ul {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: normal;margin-top: 20px;font-size: 22px}
+.desc_text_new ol li ul {padding-top: 15px;padding-bottom: 15px;}
+.accent_table {max-width: 100%;overflow: auto;margin-bottom: 20px;}
+.coaching_session_table {border: 1px solid #cfcfcf;text-align: center;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+html[lang="jp"] body .coaching_session_table {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: normal}
+.coaching_session_table th {background: #1e3c59;color: #fff;font-size: 24px;width: 14.7%;padding: 5px;border-bottom: 1px solid #cfcfcf;}
+.coaching_session_table td {font-size: 21px;color: #1e3c59;padding: 5px;border-right: 2px solid #cfcfcf;min-width: 100px;}
+.coaching_session_table td:nth-child(2n+1) {background: #9a9a9a;}
+.global-services .tbl-layout table {width: 100%;color: #404040;text-align: center;}
+.global-services .coaching_pricing_table, .global-services .coaching_desc_table {border: 1px solid #cfcfcf !important;font-size: 24px;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;color: #000;}
+html[lang="jp"] body .global-services .coaching_pricing_table, html[lang="jp"] body .global-services .coaching_desc_table {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;}
+.global-services .coaching_pricing_table th, .global-services .coaching_pricing_table td {border-bottom: 1px solid #cfcfcf;padding: 5px;text-align: center;border-right: 1px solid #cfcfcf;vertical-align: middle;background: #1e3c59;color: #fff;white-space: normal !important;}
+.global-services .coaching_pricing_table td {background: #fff;color: #444;font-size: 18px;}
+.global-services .coaching_pricing_table tr:nth-child(2n) {background: #fff;}
+.global-services .coaching_pricing_table tr:nth-child(2n+1), .global-services .coaching_pricing_table tr:nth-child(2n+1) td {background: #c9c9c9;}
+.global-services .coaching_desc_table tr:nth-child(2n+1) {background: #fff;}
+.global-services .coaching_desc_table th {background: #1e3c59;color: #fff;white-space: nowrap;}
+.global-services .coaching_desc_table th {padding: 5px;text-align: center;border-right: 1px solid #cfcfcf;vertical-align: middle;}
+.global-services .coaching_desc_table tr:nth-child(2n) {background: #c9c9c9;}
+.global-services .coaching_desc_table td {text-align: left;border-bottom: 1px solid #cfcfcf;padding: 5px;border-right: 1px solid #cfcfcf;vertical-align: middle;font-size: 18px;}
+.global-services .coaching_desc_table tr:nth-child(2n+1) {background: #fff;}
+.global-services .more {margin: 40px 0;}
+.global-services .more a {display: inline-block;background: linear-gradient(180deg, #ED1E68 0%, #F45BB9 100%);border-radius: 8px;padding: 5px 15px;font-size: 25px;line-height: 31px;color: #FFFFFF;box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);}
+.global-services.pricing-aspire .coaching_desc_table th, .global-services.pricing-aspire .coaching_pricing_table th, .global-services.casual-pricing .coaching_desc_table th, .global-services.kids-pricing .coaching_desc_table th, .global-services.kids-pricing .coaching_pricing_table th {background: linear-gradient(180deg, #17AA87 0%, rgba(23, 170, 135, 0.499454) 100%);text-align: left;padding: 5px;letter-spacing: 0.01em}
+.global-services.pricing-aspire .coaching_desc_table td, .global-services.pricing-aspire .coaching_pricing_table td, .global-services.casual-pricing .coaching_desc_table td, .global-services.casual-pricing .coaching_pricing_table td, .global-services.casual-pricing .coaching_pricing_table.grey_th th, .global-services.casual-pricing .coaching_pricing_table td, .global-services.kids-pricing .coaching_pricing_table td {text-align: left}
+.global-services.pricing-aspire .coaching_desc_table tr:nth-child(2n), .global-services.pricing-aspire .coaching_pricing_table tr:nth-child(2n+1), .global-services.pricing-aspire .coaching_pricing_table tr:nth-child(2n+1) td, .global-services.casual-pricing .coaching_desc_table tr:nth-child(2n), .global-services.casual-pricing .coaching_pricing_table tr:nth-child(2n+1) td, .global-services.kids-pricing .coaching_desc_table tr:nth-child(2n), .global-services.kids-pricing .coaching_pricing_table tr:nth-child(2n+1), .global-services.kids-pricing .coaching_pricing_table tr:nth-child(2n+1) td {background: #f2f2f2;text-align: left;font-size: 18px;}
+/* 3.4 ACCENT KIDS PAGE START */
+.accent_kids {color: #333;padding: 30px 0 50px;}
+.accent_kids p {font-size: 24px;margin-bottom: 15px;color: #222;}
+.accent_kids h2 {font-size: 48px;color: #000;}
+.accent_kids h3 {font-size: 42px;color: #000;}
+.accent_kids ul {color: #222;margin-left: 40px;margin-bottom: 15px;font-size: 24px;}
+.accent_kids ul li {list-style: disc outside;line-height: 1.4;}
+.curriculum_img img {float: right;margin-bottom: 15px;}
+.books_img {text-align: center;margin-bottom: 15px;}
+.kids_lesson_plan {border: 2px solid #000;overflow: auto;margin-bottom: 15px;}
+.kids_lesson_plan table {width: 100%;font-size: 24px;}
+.kids_lesson_plan table th {background: #d9d9d9;border: 1px solid #ccc;padding: 10px;}
+.kids_lesson_plan table tr.kl_heading th {background: #a4c2f4;color: #fff;border: 0 none;border-bottom: 2px solid #000;}
+.kids_lesson_plan table td {border: 1px solid #ccc;padding: 10px;}
+.kids_lesson_plan table td.num {text-align: center;}
+/* ACTIVITY START */
+.kids_activties .age_group {margin-bottom: 25px;}
+.kids_activties .age_group h4 {font-size: 32px;font-weight: 600;color: #cc4125;border-left: 2px dotted #cc4125;border-bottom: 2px solid #cc4125;position: relative;padding: 10px;margin-bottom: 15px;}
+.kids_activties .age_group h4 img {position: absolute;right: 20px;top: -10px;max-width: 85px;transform: rotate(-15deg);-moz-transform: rotate(-15deg);-webkit-transform: rotate(-15deg);-moz-transform: rotate(-15deg);-o-transform: rotate(-15deg);}
+.kids_activties .age_group aside {float: left;width: 40%;}
+.kids_activties .age_group aside h5 {background: #f4cccc;padding: 5px 10px;display: inline-block;text-transform: uppercase;font-size: 26px;}
+html[lang="jp"] body .kids_activties .age_group aside h5 {font-size: 24px;}
+.kids_activties .age_group aside ul {margin-left: 60px;}
+.kids_activties .age_group.six_to_seven h4 {color: #76a5af;border-color: #76a5af;}
+.kids_activties .age_group.six_to_seven h4 img {top: -10px;max-width: 110px;transform: rotate(-25deg);-moz-transform: rotate(-25deg);-webkit-transform: rotate(-25deg);-moz-transform: rotate(-25deg);-o-transform: rotate(-25deg);}
+.kids_activties .age_group.six_to_seven aside h5 {background: #d0e0e3;}
+.kids_activties .age_group.seven_to_eight h4 {color: #e69138;border-color: #e69138;}
+.kids_activties .age_group.seven_to_eight h4 img {top: 0;max-width: 90px;transform: rotate(15deg);-moz-transform: rotate(15deg);-webkit-transform: rotate(15deg);-moz-transform: rotate(15deg);-o-transform: rotate(15deg);}
+.kids_activties .age_group.seven_to_eight aside h5 {background: #fce5cd;}
+.kids_activties .age_group.eight_to_nine h4 {color: #cc4125;border-color: #cc4125;}
+.kids_activties .age_group.eight_to_nine h4 img {top: 0;max-width: 90px;transform: rotate(5deg);-moz-transform: rotate(5deg);-webkit-transform: rotate(5deg);-moz-transform: rotate(5deg);-o-transform: rotate(5deg);}
+.kids_activties .age_group.eight_to_nine aside h5 {background: #f4cccc;}
+.kids_activties .age_group.nine_to_ten h4 {color: #674ea7;border-color: #674ea7;}
+.kids_activties .age_group.nine_to_ten h4 img {top: 0;max-width: 90px;transform: rotate(5deg);-moz-transform: rotate(5deg);-webkit-transform: rotate(5deg);-moz-transform: rotate(5deg);-o-transform: rotate(5deg);}
+.kids_activties .age_group.nine_to_ten aside h5 {background: #d9d2e9;}
+.kids_activties .age_group.ten_to_eleven h4 {color: #cc0000;border-color: #cc0000;}
+.kids_activties .age_group.ten_to_eleven h4 img {top: 0;max-width: 110px;transform: rotate(-5deg);-moz-transform: rotate(-5deg);-webkit-transform: rotate(-5deg);-moz-transform: rotate(-5deg);-o-transform: rotate(-5deg);}
+.kids_activties .age_group.ten_to_eleven aside h5 {background: #ea9999;}
+.kids_activties .age_group.eleven_to_twelve h4 {color: #3d85c6;border-color: #3d85c6;}
+.kids_activties .age_group.eleven_to_twelve h4 img {top: 0;max-width: 130px;transform: rotate(0);-moz-transform: rotate(0);-webkit-transform: rotate(0);-moz-transform: rotate(0);-o-transform: rotate(0);}
+.kids_activties .age_group.eleven_to_twelve aside h5 {background: #c9daf8;}
+/* /ACTIVITY END */
+.event_info {background: #fce5cd;text-align: center;padding: 15px;margin: 15px 0 25px;}
+/* /ACCENT KIDS PAGE END*/
+/*===== SIMPLE PRICING TABEL STARTS =====*/
+.simple-pricing-table {font-size: 0;padding-bottom: 30px;}
+.simple-pricing-table * {-webkit-transition: all .25s ease;transition: all .25s ease;}
+.simple-pricing-table .column {position: relative;display: inline-block;margin-left: -1px;margin-top: -1px;width: 25%;border: 1px solid #cfcfcf;background-color: #fff;text-align: center;-webkit-backface-visibility: hidden;-ms-backface-visibility: hidden;backface-visibility: hidden;-webkit-border-radius: 6px;border-radius: 6px;padding-bottom: 100px;}
+.simple-pricing-table .title {margin: 0;padding: 27px 5px;text-transform: uppercase;font-weight: 300;}
+.simple-pricing-table .price {padding: 28px 0 15px;border-top: 1px solid #e7e7e7;background-color: #f7f7f7;border-bottom: 1px solid #e7e7e7;}
+.simple-pricing-table .cost {margin: 0;font-weight: 300;font-size: 44px;line-height: .7em;}
+.simple-pricing-table .description {color: #a8a8a8;text-transform: uppercase;font-weight: 400;font-size: 11px;}
+.simple-pricing-table .features {padding: 0 15px;}
+.simple-pricing-table .features li {position: relative;padding: 9px;border-top: 1px solid #ebebeb;font-weight: 300;font-size: 15px;min-height: 50px;}
+.page-id-23 .simple-pricing-table .features li {padding: 9px 16px;}
+.simple-pricing-table .features li:first-child {border: none;}
+.simple-pricing-table .footer {padding: 30px 0;border-top: 1px solid #e9e9e9;background-color: #fcfcfc;-webkit-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;bottom: 0;left: 0;position: absolute;text-align: center;width: 100%;}
+.simple-pricing-table .button {margin: 0;}
+.simple-pricing-table .column:hover, .simple-pricing-table .featured {z-index: 11;border-color: transparent; background: linear-gradient(180deg, #17AA87 0%, rgba(23, 170, 135, 0.499454) 100%);-webkit-transform: scale(1.05);transform: scale(1.05);}
+.simple-pricing-table .column:hover .features li, .simple-pricing-table .featured .features li {border-top-color: #fff;border-top-color: rgba(255,255,255,.5);color: #fff;}
+.simple-pricing-table .column:hover .title, .simple-pricing-table .featured .title, .simple-pricing-table .column:hover .cost, .simple-pricing-table .featured .cost, .simple-pricing-table .column:hover .description, .simple-pricing-table .featured .description {color: #fff;}
+.simple-pricing-table .column:hover .price, .simple-pricing-table .featured .price {border-color: #fff;border-color: rgba(255,255,255,.5);background-color: #1ac8b2;}
+.simple-pricing-table .column:hover .footer, .simple-pricing-table .featured .footer {border-top-color: #fff;border-top-color: rgba(255,255,255,.5);background-color: #1ac8b2;}
+.simple-pricing-table .column:hover .button, .simple-pricing-table .featured .button {background-color: #fff;border-color: rgba(0, 0, 0, 0);}
+/*===== SIMPLE PRICING TABEL ENDS =====*/
+.coaching_pricing_table.grey_th th, .coaching_desc_table.grey_th th {background: #6c6c6c;}
+.coaching_pricing_table img, .used_symbol img {max-width: 22px;}
+.used_symbol img {vertical-align: text-bottom;}
+.feature_table td:first-child {text-align: left;}
+.feature_table td {border-color: #cfcfcf;}
+.global-services.subscription .simple-pricing-table.col-4 {max-width: 100%;}
+.comp-prof-table .left-title {text-align: right;width: 150px;min-width: 110px;}
+.desc_text_new.privacy-policy h2 {color: #000;margin-bottom: 0px;padding-top: 15px;}
+
+@media (max-width: 767px) {.global-services .container {font-size: 16px !important;line-height: 24px !important;}
+.desc_text_new p {font-size: 16px;line-height: 24px;}
+.tbl-layout {width: 100%;overflow: auto}
+.simple-pricing-table .column {width: 100%;float: none;}
+#amazing-language-partners .team-member article {margin: 0 20px 20px;}
+.global-services .box.for-super-kids {color: #000}
+}
+@media (min-width:768px) and (max-width:990px) {.tbl-layout {width: 100%;overflow: auto}
+.simple-pricing-table .column {width: 50%;float: none;margin-bottom: 50px;}
+.staff-members .team-member {overflow: hidden;width: 100%;}
+}
+body.page-id-52471 .section.padding-top-off.padding-bottom-off .container {width: 100%;max-width: 1600px;}
+body.page-id-52471 .section.padding-top-off.padding-bottom-off + .section.padding-top-off.padding-bottom-off + .section.padding-top-off.padding-bottom-off + .section.padding-top-off.padding-bottom-off + .section.padding-top-off.padding-bottom-off .container {width: 100%;max-width: 1140px;}
+body.page-id-52471 .main-section.section {padding: 0}
+body.page-id-52461 .section .container {width: 100%;max-width: 1600px;}
+body.page-id-52461 .section + .section + .section + .section + .section .container {width: 100%;max-width: 1140px;}
+body.page-id-52461 .main-section.section {padding: 0}
+/* OLD STYLE REMOVING */
+.update-lesson-status-teacher table .up-lesn-date {width: 120px;}
+.update-lesson-status-teacher table .up-duration {width: 80px;}
+.update-lesson-status-teacher table .up-status {width: 100px;}
+.woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3 {display: flex;align-content: center;justify-content: center;align-items: center;width: 100%;}
+.woocommerce-page #content .shipping-taxable .add_to_cart_button {left: 15%;}
+.term-aspire-coaching h1.theme-title, .term-aspire-coaching-ja h1.theme-title {padding-top: 60px !important;}
+#enaccent-kids-learning-approaches .acc-box {margin-bottom: 0}
+.lesson-topic-wrapper {padding-top: 15px;overflow: hidden;}
+.teacher-accordian-onePage .editable-dropdown .dropdown-toggle::after {display: none}
+.graph-container-heading, .teacher-accordian-onePage .graph-container-heading {padding: 0;margin: 0;position: relative;width: auto;font-size: 22px !important;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;font-weight:normal !important;color:#777 !important;}
+#onepage-session-canvas .graph-container.current-page-graph{border: 1px solid #0a5996 !important;}
+.teacher-accordian-onePage .btns-wrapper{margin-bottom:0 !important}
+.pdf-download {margin-bottom: 15px;}
+.pdf-download p {margin: 0 !important;padding: 0;font-size: 16px !important;color: #444 !important;}
+.desc_text {background: transparent;}
+.main-section.section {padding-top: 100px;}
+.video-full-container > .video-full-entry {padding: 0}
+.section {padding: 20px 0 0 0;}
+body .page #content {padding-top: 0;}
+#lang_sel_footer ul li a {font-size: 18px;color: #444;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+#lang_sel_footer ul li a img {box-shadow: 0 0 4px rgba(0,0,0,.5);}
+#lang_sel_footer {padding: 10px 0 10px;border: 0 none;}
+.video-full-container > .video-full-entry {display: block;}
+.video-full-container {display: block;height: auto !important;}
+.acc-box {margin-bottom: 20px;display: block;width: 100%;}
+.one_page_canvas .card-header a {text-align: left !important}
+.one_page_canvas .card-header a.collapsed {margin-bottom: 0px;padding: 15px 55px 15px 20px;border: 1px solid #8a8a8a;background-color: #e2e2e2;color: #444;font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;text-align: left}
+.one_page_canvas .card-header a.collapsed:hover {background-color: #f6f6f6;color: #444 !important;}
+.one_page_canvas .card-header {margin-bottom: 0 !important}
+html[lang="jp"] body .acc-trigger, html[lang="jp"] body .cus_accord {font-size: 18px;font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: 500}
+.acc-trigger::after, .cus_accord::after {line-height: 1.7;font-size: 34px;font-weight: normal;border-left: none}
+.acc-trigger a, .cus_accord a {font-size: 18px;color: #444;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;font-weight: normal;font-style: normal;}
+html[lang="jp"] body .acc-trigger a, html[lang="jp"] body .cus_accord a {font-size: 18px;font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: 500}
+.search_form_new {padding-top: 90px;}
+.progress-bar {background-color: transparent;color: #444}
+.progress-bar span {position: absolute;left: 0;top: -30px;}
+.progress-bar span.pull-right {left: auto;right: 0}
+#new-design-home-page-3-ja section:nth-child(2) {display: none;}
+#ennew-design-home-page-3 section:nth-child(2) {display: none;}
+/* Video*/
+.section iframe {width: 100%;height: 500px;padding: 0px !important;margin: 0 auto;}
+.fluid-width-video-wrapper {width: 100%;height: 500px;padding: 0px !important;margin: 0 auto;}
+/* //Video*/
+/*MODAL WINDOW*/
+.modal-open {overflow: hidden;}
+.modal {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 99999;display: none;overflow: hidden;-webkit-overflow-scrolling: touch;outline: 0;}
+.modal h5 {font-size: 16px !important; margin-bottom:20px !important;}
+.modal h6 {font-size: 14px !important}
+.modal.fade .modal-dialog {-webkit-transition: -webkit-transform .3s ease-out;-o-transition: -o-transform .3s ease-out;transition: transform .3s ease-out;-webkit-transform: translate(0, -25%);-ms-transform: translate(0, -25%);-o-transform: translate(0, -25%);transform: translate(0, -25%);}
+.modal.in .modal-dialog {-webkit-transform: translate(0, 0);-ms-transform: translate(0, 0);-o-transform: translate(0, 0);transform: translate(0, 0);}
+.modal-open .modal {overflow-x: hidden;overflow-y: auto;}
+.modal-dialog {position: relative;width: auto;margin: 10px;}
+.modal-content {position: relative;background-color: #fff;-webkit-background-clip: padding-box;background-clip: padding-box;border: 1px solid #999;border: 1px solid rgba(0, 0, 0, .2);border-radius: 6px;outline: 0;-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);box-shadow: 0 3px 9px rgba(0, 0, 0, .5);}
+.modal-backdrop {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 9999;background-color: #000;}
+.modal-backdrop.fade {filter: alpha(opacity=0);opacity: 0;}
+.modal-backdrop.in {filter: alpha(opacity=50);opacity: .5;}
+.modal-header {padding: 15px;border-bottom: 1px solid #e5e5e5;}
+.modal-header .close {background: rgba(0, 0, 0, 0);cursor: pointer;color: rgba(0, 0, 0, 0.5);font-size: 21px;font-weight: 700;line-height: 1;text-shadow: 0 1px 0 #fff;position: absolute;top:25px;right:30px;padding: 0;/*display:block !important*/}
+.modal-title {margin: 0;line-height: 1.42857143;}
+.modal-dialog.modal-xl{width:auto;margin: 30px auto;max-width:1170px;}
+.modal-body {position: relative;padding: 15px;}
+.modal-body .text-center{padding: 10px 0;border-top: 1px solid #ccc;margin-top: 20px;}
+.modal-body .text-center + .text-center{padding:0;border-top:none;margin-top: 0px;}
+.modal-body .text-center .freetrial_btn{border:1px solid #cfcfcf !important;color:#002E58 !important;margin-bottom: 15px;padding: 6px 20px;background-color: transparent !important;vertical-align: baseline;text-align: center;text-decoration: none;text-transform: uppercase;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;font-weight: normal;font-size: 14px;border-radius: 6px;transition: all .25s ease;}
+	.modal-body .text-center .freetrial_btn:hover{color:#fff !important;background-color:#002E58 !important}
+
+.modal-body .col-sm-4.col-lg-4.col-md-4 img {position: relative;top: -10px;}
+.modal-footer {padding: 15px;text-align: right;border-top: 1px solid #e5e5e5;}
+.modal-footer .btn + .btn {margin-bottom: 0;margin-left: 5px;}
+.modal-footer .btn-group .btn + .btn {margin-left: -1px;}
+.modal-footer .btn-block + .btn-block {margin-left: 0;}
+.modal-scrollbar-measure {position: absolute;top: -9999px;width: 50px;height: 50px;overflow: scroll;}
+.modal .modal-body .pull-right {width: 360px;padding-top: 9px;}
+.lesson_materials_task .col-lg-6 .lesson_inner{padding: 0;border-radius: 8px;margin-bottom:20px;}
+.lesson_materials_task .col-lg-6 .lesson_inner h4.les_title{background-color: #c9daf8;text-align: center;margin-bottom: 10px;border-radius: 10px 10px 0 0;font-size: 18px;padding: 10px 5px;font-weight: normal;color: #777;cursor: pointer;}
+.lesson_materials_task .col-lg-6 .lesson_inner h4.les_title.orange{background-color: #f4cccc;}
+.lesson_materials_task .col-lg-6 .lesson_inner .form-group{padding:0 10px;}
+	.lesson_materials_task .col-lg-6 .lesson_inner .form-group textarea{height:75px;border-radius:6px;in-height: 40px;padding: 10px;border:1px solid #ccc;}
+.lesson_materials_task .col-lg-6 .lesson_inner .form-group .lessn_btn{background: #002E58;}
+.lesson_materials_task .col-lg-6 .lesson_inner .form-group .lessn_btn.grey-bg{background: #aba8a8;}
+#lesson-task-modal .modal-header{border:none}
+
+
+
+@media (min-width: 768px) {.modal-dialog {width: 600px;margin: 30px auto;max-width: 600px;}
+.modal-content {-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);box-shadow: 0 5px 15px rgba(0, 0, 0, .5);}
+.modal-sm {width: 300px;}
+}
+@media (min-width: 992px) {.modal-lg {width: 900px;}
+}
+@media (max-width: 767px) {.modal .modal-body .pull-right {width: 100%;}
+.mobile-nav-active .mobile-nav ul li.customised_courses {display: none}
+.main-nav > ul > li.casual_conversation,  .main-nav > ul > li.aspire_text,  .main-nav > ul > li.super_kids,  .main-nav > ul > li.free-demo {display: block}
+}
+@media (max-width:991px) {.mobile-nav-active .mobile-nav ul li.customised_courses {display: none}
+.staff-members .team-member {display: block;}
+.staff-members .team-member .team-contents {display: block;}
+.team-group .fav-cal-icons {position: relative;bottom: 0;}
+.team-group .fav-cal-icons span {padding: 0px;}
+}
+/*MODAL WINDOW*/
+.search_form_new input[type="submit"] {line-height: 45px;}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {.search_form_new input[type="submit"] {line-height: 46px;}
+}
+.dataTables_length {width: 220px;}
+body.admin-bar header {margin-top: 32px;}
+.quote-image {margin: 0}
+body.page-id-855 .main-section.section, body.page-id-52202 .main-section.section, body.page-id-52192 .main-section.section, body.page-id-829 .main-section.section, body.page-id-52438 .main-section.section, body.page-id-52436 .main-section.section {padding-top: 10px;}
+body.page-id-855 .global-services, body.page-id-52202 .global-services, body.page-id-52192 .global-services, body.page-id-52438 .global-services, body.page-id-52436 .global-services, body.page-id-829 .global-services {padding-top: 10px;}
+.horizontalTab .edit-profile li label {margin-right: 0;}
+.lesson-topic-table tr th {border-left: none}
+.success:before {display: none}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {.share-records input.share-btn {line-height: 42px;}
+}
+.simple-pricing-table .button {display: inline-block;background: linear-gradient(180deg, #ED1E68 0%, #F45BB9 100%);border-radius: 8px;padding: 5px 15px;font-size: 18px;line-height: 31px;color: #FFFFFF;box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);text-transform: capitalize}
+.simple-pricing-table .column:hover .button, .simple-pricing-table .featured .button {color: #fff;}
+table, th, td {font-size: 16px !important;letter-spacing: 0.02em !important;}
+html[lang="jp"] body .more a {padding: 10px 15px !important;}
+html[lang="jp"] body .modal-body p {font-size: 14px;}
+html[lang="jp"] body #book-lesson .count-box a {font-size: 24px;}
+html[lang="jp"] body input[type="text"] {font-size: 16px !important;}
+body.page-id-52203 .main-section.section.padding-off.padding-top-off, body.page-id-52208 .main-section.section.padding-off.padding-top-off, body.page-id-52204 .main-section.section.padding-off.padding-top-off, body.page-id-52209 .main-section.section.padding-off.padding-top-off, body.page-id-52607 .main-section.section.padding-off.padding-top-off, body.page-id-52609 .main-section.section.padding-off.padding-top-off, body.page-id-52393 .main-section.section.padding-off.padding-top-off, body.page-id-52395 .main-section.section.padding-off.padding-top-off, body.page-id-52384 .main-section.section.padding-off.padding-top-off, body.page-id-52386 .main-section.section.padding-off.padding-top-off, body.page-id-52388 .main-section.section.padding-off.padding-top-off, body.page-id-52390 .main-section.section.padding-off.padding-top-off {padding: 0;}
+body.tax-product_cat.term-casual-conversations #container {padding-top: 60px;}
+html[lang="jp"] body .global-services .coaching_pricing_table th, html[lang="jp"] body .global-services .coaching_pricing_table td {min-width: 70px}
+@media (min-width:768px) and (max-width:1024px) {#intro .intro-info h2,  html[lang="jp"] body #intro .intro-info h2 {font-size: 32px;line-height: 40px;}
+#intro .intro-info h2 span,  html[lang="jp"] body #intro .intro-info h2 span {font-size: 22px;}
+#intro .intro-info .book-lesson {font-size: 24px;font-weight: 500;}
+section-header h3,  html[lang="jp"] body .section-header h3 {font-size: 36px;line-height: 46px;}
+.global-services .about-content h3,  html[lang="jp"] body .global-services .about-content h3 {font-size: 24px;line-height: 32px;}
+#lessons-anywhere {padding: 0px 0 40px 0;}
+.home-page-team-block .team-member article {/*width:30%;margin:0 10px !important;*/width: auto;}
+#flexible-pricing {background-position: center 40%;}
+html[lang="jp"] body .global-services .description,  .global-services .description {font-size: 20px;line-height: 32px;}
+html[lang="jp"] body #lessons-anywhere .description,  #lessons-anywhere .description {font-size: 20px;line-height: 32px;}
+html[lang="jp"] body #flexible-pricing .description,  #flexible-pricing .description {font-size: 20px;line-height: 32px;}
+html[lang="jp"] body #our-learner .description,  #our-learner .description {font-size: 20px;line-height: 32px;}
+#footer .footer-top .footer-links ul li {padding: 5px 0;font-size: 20px;}
+.registration-block .theme-title.website-general-color {font-size: 36px;padding-bottom: 10px;}
+.search_form_new input[type="submit"] {line-height: 46px;}
+.custom-tabs {display: flex}
+.section-header h3,  html[lang="jp"] body .section-header h3 {font-size: 32px;line-height: 46px;}
+html[lang="jp"] body .desc_text_new p,  .desc_text_new p {font-size: 18px;}
+#book-lesson .book-lesson {font-size: 32px;}
+#our-learner .footer .img-container {width: 60px;height: 60px;}
+.quote-image img {position: relative;top: 3px;}
+#book-lesson {padding: 0px 0 40px 0;}
+html[lang="jp"] body .acc-trigger a, .cus_accord a,  html[lang="jp"] body .cus_accord a, .acc-trigger a {font-size: 16px;font-weight: 500;}
+.acc-trigger::after,  .cus_accord::after {font-size: 24px;top: 5px;}
+.pdf-download {margin-bottom: 15px;width: 50%;flex: 0 0 50%;max-width: 50%;}
+}
+@media (min-width:991px) and (max-width:1024px) {#customer_login {display: flex}
+h2.login {text-align: center;}
+#flexible-pricing .row,  #lessons-anywhere .row {text-align: center;justify-content: center;}
+}
+@media (max-width:767px) {.global-services {padding: 20px 0 10px 0;}
+body.page-id-52607 .global-services,  body.page-id-52609 .global-services {padding: 20px 20px 10px 20px;}
+html[lang="jp"] body .desc_text_new,  html[lang="jp"] body .video-full-entry {font-size: 18px;}
+.global-services .coaching_pricing_table th, .global-services .coaching_pricing_table td {min-width: 60px;}
+.col-md-12 .container .col-md-12 {padding-left: 0 !important;padding-right: 0 !important}
+.global-services .more {margin: 20px 0;}
+.global-services .more a {position: relative;top: -5px}
+table, th, td {font-size: 14px !important;letter-spacing: 0.02em !important;}
+.section-header h3 {margin-bottom: 20px;}
+.acc-box {padding: 0 15px;}
+.acc-trigger a,  .cus_accord a {font-size: 14px;}
+.acc-trigger, .cus_accord {padding: 10px 45px 10px 20px;line-height: 1.2;}
+html[lang="jp"] body .acc-trigger a, html[lang="jp"] body .cus_accord a {font-size: 14px;font-weight: normal;}
+.acc-trigger::after, .cus_accord::after {font-size: 26px;}
+body {padding-bottom: 30px !important;}
+.registration-block {padding: 0 15px;}
+h1.theme-title {font-size: 32px !important;margin-bottom: 0 !important;padding-bottom: 0 !important;}
+.registration-block h1 {font-size: 32px !important;}
+#amazing-language-partners {padding: 0px 15px 40px 15px;}
+html[lang="jp"] body .desc_text_new p,  .desc_text_new p {font-weight: 400;font-size: 18px;line-height: 30px;}
+#book-lesson {padding: 0px 0 40px 0;}
+.section-header h3,  html[lang="jp"] body .section-header h3 {font-size: 22px;font-weight: 600 !important;}
+#lessons-anywhere {padding: 0px 0 40px 0;}
+.cus_accord::after {font-size: 24px;top: 5px;}
+.search_form_new input[type="submit"] {line-height: 52px;}
+.modal-dialog {margin: 10px auto;}
+html[lang="jp"] body #book-lesson .count-box a,  #book-lesson .count-box a {font-size: 18px;}
+#footer .footer-top .social-links {margin-bottom: 20px;}
+#footer .comming-soon {margin-bottom: 0px;}
+html #wpadminbar {position: fixed;}
+body.admin-bar #header {top: 14px;}
+body.admin-bar .mobile-nav-toggle {top: 46px;}
+.woocommerce .products ul,  .woocommerce ul.products,  .woocommerce-page .products ul,  .woocommerce-page ul.products {padding: 0 15px}
+.woocommerce ul.products li,  .woocommerce-page ul.products li {margin: 15px 0 !important}
+body.page-id-52192 .global-services,  body.page-id-52209 .global-services,  body.page-id-52204 .global-services,  body.page-id-52192 .global-services,  body.page-id-52192 .global-services,  body.page-id-52192 .global-services {padding: 0 15px}
+table.shop_table,  .cart-collaterals {width: calc(100% - 30px) !important;margin-left: auto !important;margin-right: auto !important;}
+body.page-id-52203 #amazing-language-partners,  body.page-id-52208 #amazing-language-partners {padding-top: 15px}
+}
+.global-services.pricing-aspire.pricing-table-price {padding: 0px 0 40px 0;}
+.global-services.pricing-aspire.pricing-table-price .section-header {margin-top: 0;width: 100%}
+.global-services.pricing-aspire.pricing-table-price .more {margin: 0px 0;}
+.global-services.pricing-aspire.pricing-table-price tr.more-btn-table .row.try-now-btn {width: 100%;padding: 20px 0 20px;margin-left: 0;margin-right: 0}
+.global-services.pricing-aspire.pricing-table-price td, {}
+}
+.global-services.pricing-aspire.pricing-table-price th {text-align: center !important}
+p.star-cond {font-size: 15px;text-align: left;margin-bottom: 0;}
+.global-services.pricing-aspire.pricing-table-price table.coaching_desc_table td {width: 70%;}
+.global-services.pricing-aspire.pricing-table-price table.coaching_desc_table td + td {width: 30%;}
+.global-services.pricing-aspire.pricing-table-price table.coaching_pricing_table td {width: 70%;}
+.global-services.pricing-aspire.pricing-table-price table.coachi  ng_pricing_table td + td {width: 30%;}
+.global-services.pricing-aspire.pricing-table-price .tbl-layout.table-pricing +.tbl-layout.table-pricing table.coaching_pricing_table td {width: auto;}
+.global-services.pricing-aspire.pricing-table-price .tbl-layout.table-pricing +.tbl-layout.table-pricing table.coaching_pricing_table td + td {width: auto;}
+.global-services.pricing-aspire.pricing-table-price .kid-sub-header-price table.coaching_pricing_table td {width: auto;}
+.global-services.pricing-aspire.pricing-table-price .kid-sub-header-price table.coaching_pricing_table td + td {width: auto;}
+.global-services.pricing-aspire.pricing-table-price table.coaching_pricing_table.grey_th td {width: auto;}
+.global-services.pricing-aspire.pricing-table-price table.coaching_pricing_table.grey_th td + td {width: auto;}
+@media (min-width:100px) and (max-width:767px) {.global-services.pricing-aspire.pricing-table-price {padding-top: 40px !important;padding-bottom: 40px !important}
+.global-services.pricing-aspire.pricing-table-price .desc_text {padding: 15px 15px 0;margin-bottom: 0;}
+.try-now-btn .more a {font-size: 18px !important}
+.global-services.pricing-aspire.pricing-table-price .section-header h3 {margin-bottom: 12px;}
+body.archive.tax-product_cat .container {padding-top: 30px !important}
+body.archive.tax-product_cat.woocommerce ul.products li.product {margin: 0 0px 15px 0px !important;width: 100% !important;padding-bottom: 15px !important}
+.woocommerce ul.products li.product p {margin: 0 0 20px 0;}
+}
+@media (min-width:100px) and (max-width: 340px) {.tbl-layout.table-pricing table,  .tbl-layout.table-pricing table th,  .tbl-layout.table-pricing table td {font-size: 10px !important;min-width: 45px !important;line-height: normal !important}
+.global-services .coaching_pricing_table th,  .global-services .coaching_pricing_table td {min-width: 45px !important;font-size: 10px !important;line-height: normal !important}
+.global-services.pricing-aspire.pricing-table-price td,  .global-services.pricing-aspire.pricing-table-price th {padding: 5px 0}
+}
+@media (min-width:341px) and (max-width: 480px) {.tbl-layout.table-pricing table,  .tbl-layout.table-pricing table th,  .tbl-layout.table-pricing table td {font-size: 12px !important;line-height: normal !important}
+.global-services .coaching_pricing_table th,  .global-services .coaching_pricing_table td {min-width: 50px !important;font-size: 12px !important;line-height: normal !important}
+.global-services .coaching_pricing_table th {line-height: 1.5 !important}
+.global-services.pricing-aspire.pricing-table-price td,  .global-services.pricing-aspire.pricing-table-price th {padding: 5px 0}
+}
+#cookiesModal {background-color: rgba(20,20,20,1);min-height: 26px;font-size: 14px;color: #ccc;line-height: 26px;padding: 8px 0 8px 30px;position: fixed;bottom: 0;left: 0;right: 0;z-index: 9999;text-align: center}
+#cookiesModal .modal-container {padding: 10px;position: relative}
+#cookiesModal .close {float: right;display: inline-block;cursor: pointer;height: 20px;width: 20px;margin: -15px 0 0 0;font-weight: bold;color: #fff}
+#cookiesModal .close:hover {color: #FFF;}
+#cookiesModal a {background-color: #ed1e68;color: #fff;display: inline-block;border-radius: 5px;padding: 0 20px;cursor: pointer;margin: 0 15px 0 15px;}
+#cookiesModal a:hover {background-color: #ed0c5d;}
+@media (max-width:767px) {.try-now-btn .more a {top: 0;}
+#cookiesModal {padding: 8px 0 8px 0px;}
+#cookiesModal a {padding: 0 10px;margin: 0 5px 0 5px;}
+#cookiesModal .close {position: absolute;top: 10px;right: 10px;}
+}
+.global-services .coaching_desc_table th, .global-services .coaching_pricing_table th, .global-services .coaching_desc_table th, .global-services .coaching_desc_table th, .global-services .coaching_pricing_table th {background: linear-gradient(180deg, #17AA87 0%, rgba(23, 170, 135, 0.499454) 100%);text-align: left;padding: 5px;letter-spacing: 0.01em}
+.global-services .coaching_desc_table td, .global-services .coaching_pricing_table td, .global-services .coaching_desc_table td, .global-services .coaching_pricing_table td, .global-services .coaching_pricing_table.grey_th th, .global-services .coaching_pricing_table td, .global-services .coaching_pricing_table td {text-align: left}
+.global-services .coaching_desc_table tr:nth-child(2n), .global-services .coaching_pricing_table tr:nth-child(2n+1), .global-services .coaching_pricing_table tr:nth-child(2n+1) td, .global-services .coaching_desc_table tr:nth-child(2n), .global-services .coaching_pricing_table tr:nth-child(2n+1) td, .global-services .coaching_desc_table tr:nth-child(2n), .global-services .coaching_pricing_table tr:nth-child(2n+1), .global-services .coaching_pricing_table tr:nth-child(2n+1) td {background: #f2f2f2;text-align: left;font-size: 18px;}
+.simple-pricing-table.col-4 {width: 100% !important;max-width: 100% !important}
+/*===== SIMPLE PRICING TABEL STARTS =====*/
+.simple-pricing-table {font-size: 0;padding-bottom:80px;}
+.simple-pricing-table * {-webkit-transition: all .25s ease;transition: all .25s ease;}
+.simple-pricing-table .column {position: relative;display: inline-block;margin-left: -1px;margin-top: -1px;width: 25%;border: 1px solid #cfcfcf;background-color: #fff;text-align: center;-webkit-backface-visibility: hidden;-ms-backface-visibility: hidden;backface-visibility: hidden;-webkit-border-radius: 6px;border-radius: 6px;padding-bottom: 100px;}
+.simple-pricing-table .column header{height: auto;position: relative;width: 100%;background:transparent;box-shadow: none;float: none;}
+.simple-pricing-table .title {margin: 0;padding: 27px 5px;text-transform: uppercase;font-weight: 300;font-size: 1.25rem;}
+.simple-pricing-table .price {padding: 28px 0 15px;border-top: 1px solid #e7e7e7;background-color: #f7f7f7;border-bottom: 1px solid #e7e7e7;}
+.simple-pricing-table .cost {margin: 0;font-weight: 300;font-size: 44px;line-height: .7em;}
+.simple-pricing-table .description {color: #a8a8a8;text-transform: uppercase;font-weight: 400;font-size: 11px;}
+.simple-pricing-table .features {padding: 0 15px;}
+.simple-pricing-table .features li {position: relative;padding: 9px;border-top: 1px solid #ebebeb;font-weight: 300;font-size: 15px;min-height: 50px;list-style: none}
+.page-id-23 .simple-pricing-table .features li {padding: 9px 16px;}
+.simple-pricing-table .features li:first-child {border: none;}
+.simple-pricing-table .footer {padding: 30px 0;border-top: 1px solid #e9e9e9;background-color: #fcfcfc;-webkit-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;bottom: 0;left: 0;position: absolute;text-align: center;width: 100%;}
+.simple-pricing-table .button {margin: 0;}
+.simple-pricing-table .column:hover, .simple-pricing-table .featured {z-index: 11;border-color: transparent;   /* background-color: #002E58;*/background: linear-gradient(180deg, #17AA87 0%, rgba(23, 170, 135, 0.499454) 100%) !important;-webkit-transform: scale(1.05);transform: scale(1.05);position: relative !important}
+.simple-pricing-table .column:hover .features li, .simple-pricing-table .featured .features li {border-top-color: #fff;border-top-color: rgba(255,255,255,.5);color: #fff;}
+.simple-pricing-table .column:hover .title, .simple-pricing-table .featured .title, .simple-pricing-table .column:hover .cost, .simple-pricing-table .featured .cost, .simple-pricing-table .column:hover .description, .simple-pricing-table .featured .description {color: #fff;}
+.simple-pricing-table .column:hover .price, .simple-pricing-table .featured .price {border-color: #fff;border-color: rgba(255,255,255,.5);background-color: #1ac8b2;}
+.simple-pricing-table .column:hover .footer, .simple-pricing-table .featured .footer {border-top-color: #fff;border-top-color: rgba(255,255,255,.5);background-color: #1ac8b2;}
+.simple-pricing-table .column:hover .button, .simple-pricing-table .featured .button {background-color: #fff;border-color: rgba(0, 0, 0, 0);}
+/*===== SIMPLE PRICING TABEL ENDS =====*/
+/* Amazing Language Partners Section--------------------------------*/
+#amazing-language-partners {padding: 60px 0 40px 0;}
+
+#amazing-language-partners .title a, #amazing-language-partners h2.team-title span {color: #505050;}
+#amazing-language-partners .box.for-super-kids .title a {line-height: 56px;}
+#amazing-language-partners .box:hover .title a {color: #505050;}
+#amazing-language-partners .description {font-size: 26px;line-height: 36px;margin-bottom: 0;text-align: center;height: 150px;overflow: hidden;}
+html[lang="jp"] body #amazing-language-partners .description {font-size: 24px;line-height: 32px;}
+#amazing-language-partners .more {margin: 40px 0;}
+#amazing-language-partners .more a {display: inline-block;background: linear-gradient(180deg, #ED1E68 0%, #F45BB9 100%);box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);border-radius: 8px;padding: 5px 15px;font-size: 25px;line-height: 31px;color: #FFFFFF;}
+#amazing-language-partners .footer {margin-top: 30px !important;text-align: left}
+#amazing-language-partners .footer .img-container {border-radius: 50%;width: 70px;height: 70px;overflow: hidden;}
+#amazing-language-partners .footer span {font-size: 22px;line-height: 27px;font-weight: 600;color: #505050;}
+#amazing-language-partners .footer .teacher-part {margin-left: -20px;}
+#amazing-language-partners .footer .teacher-part img {height: 26px !important}
+#amazing-language-partners .team-member article {overflow: hidden;float: none;margin:0 0px;vertical-align: top;display: inline-block}
+#amazing-language-partners .team-member article .contents {width: 250px;overflow: hidden;}
+/*===== ACCENT TEACHERS STARTS =====*/
+#amazing-language-partners .container{max-width: 1320px;}
+.staff-members .team-member {overflow: hidden;max-width: 1320px;display: flex;justify-content: center;align-items: center;text-align: center;}
+.staff-members .team-member .team-contents {justify-content: center; /*align-items: center;*/text-align: center;display: flex}
+.home-page-team-block.staff-members .team-member .team-contents {width: 100% !important;}
+.team-member {position: relative;font-size: 0;}
+.home-page-team-block .team-contents {width: 100%;}
+.team-member article {overflow: hidden;float: left;margin: 0 20px;vertical-align: top;}
+.home-page-team-block .team-member article {float: none;display: inline-block;}
+.contents {width: 250px;overflow: hidden;}
+.team-info {float: left;width: 250px;}
+.team-image {margin-bottom: 10px;min-height: 1px;}
+.team-plus-icon .curtain {opacity: 0;}
+.single-image2 {backface-visibility: hidden;cursor: pointer;display: block;font-size: 0;margin: 0;position: relative;}
+.team-plus-icon .curtain:after {position: absolute;left: 50%;top: 50%;display: block;margin: -30px 0 0 -30px;width: 60px;height: 60px;color: #fff;text-align: center;font-size: 28px;font-family: 'fontello';line-height: 60px;-webkit-border-radius: 50%;border-radius: 50%;-webkit-transition: all .3s ease-in;transition: all .3s ease-in;background-color: #002E58;background-color: rgba(0,46,88,0.8);font-size: 38px;content: '\e9a1';}
+.contents.open .single-image .curtain:after{ transform: rotate(45deg);}
+.contents.open{ -webkit-transition: width 1s, height 2s !important;  transition: width 1s, height 2s !important;}
+.team-plus-icon:hover .curtain, .touch .active .team-plus-icon .curtain {visibility: visible;opacity: 1;}
+.not-ie .open .team-plus-icon .curtain:after, .touch .active .team-plus-icon .curtain:after {-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+.team-group {padding: 5px 10px;border: 1px solid #e0e0e0;background-color: #fcfcfc;-webkit-transition: all .3s ease-in;transition: all .3s ease-in;min-height: 198px;position: relative;}
+.mr-star-full, .mr-star-half, .mr-star-empty { color: #ffd700;}
+.team-member article:hover .team-group, .open .team-group {border-color: transparent;background-color: #002E58;}
+.team-member .team-group h2 span:first-child {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width: 110px;float: left;line-height: 32px;margin-right: 3px;color: #505050;}
+.team-title, .team-position {-webkit-transition: color .3s ease-in;transition: color .3s ease-in;}
+.team-title {margin-bottom: 2px;text-transform: uppercase;font-size: 24px;padding-right: 15px;line-height: 27px;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+html[lang="jp"] body {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: 500}
+.team-title span + span {font-size: 12px;}
+.team-group img {position: absolute;top: 10px;right: 10px;}
+.team-position {margin-bottom: 5px;color: #aeaeae;font-size: 16px;text-align: center;}
+.simptip-info.simptip-position-top.half-arrow::before {border-top: 7px solid #fff;}
+.team-group .simptip-info.simptip-position-top::after {background-color: #fff;color: #002E58;border: 1px solid #002E58;border-radius: 3px}
+.team-group .fav-cal-icons {transition: all 0.3s linear 0s;color: #002E58;font-size: 26px;text-align: center;position: absolute;bottom: 10px;width: 100%;left: 0;}
+html[lang="jp"] body .team-group .fav-cal-icons {font-size: 24px;}
+.team-group .fav-cal-icons span a {color: #002E58;font-size: 26px;}
+html[lang="jp"] body .team-group .fav-cal-icons span a {font-size: 24px;}
+.team-group .fav-cal-icons span a i {color: #002E58;font-size: 26px;}
+html[lang="jp"] body .team-group .fav-cal-icons span a i {font-size: 24px;}
+.team-group .fav-cal-icons span {display: inline-block;padding: 5px;}
+.team-position span, .team-position img {vertical-align: top;}
+.team-member article:hover .team-title, .team-member article:hover .team-position, .open .team-title, .open .team-position, .open .team-group .fav-cal-icons, .open .team-group .fav-cal-icons a, .open .team-group .fav-cal-icons a i, .team-member article:hover .team-group .fav-cal-icons, .team-member article:hover .team-group .fav-cal-icons a, .team-member article:hover .team-group .fav-cal-icons a i {color: #fff;}
+.time-award {background: rgba(0, 0, 0, 0) url(../images/time-reward.png) center 0 no-repeat;display: inline-block;height: 30px;position: relative;width: 30px;font-size: 0;line-height: 0;background-size: 100%;}
+.cer-award {background: rgba(0, 0, 0, 0) url(../images/cer-reward.png) center 0 no-repeat;display: inline-block;height: 30px;position: relative;width: 30px;font-size: 0;line-height: 0;background-size: 100%;margin: 0 5px;}
+.under-train {background: rgba(0, 0, 0, 0) url(../images/under-train.png) center -2px no-repeat;display: inline-block;height: 30px;position: relative;width: 32px;font-size: 0;line-height: 0;background-size: 100%;margin: 0 5px;}
+.scaleRun:hover .team-group .team-position .time-award, .team-member article:hover .team-group .team-position .time-award, .contents.open .team-position .time-award {background: rgba(0, 0, 0, 0) url(../images/time-reward-hover.png) center 0 no-repeat;background-size: 100%;}
+.scaleRun:hover .team-group .team-position .cer-award, .team-member article:hover .team-group .team-position .cer-award, .contents.open .team-position .cer-award {background: rgba(0, 0, 0, 0) url(../images/cer-reward-hover.png) center 0 no-repeat;background-size: 100%;}
+.scaleRun:hover .team-group .team-position .under-train, .team-member article:hover .team-group .team-position .under-train, .contents.open .team-position .under-train {background: rgba(0, 0, 0, 0) url(../images/under-train-hover.png) center -2px no-repeat;background-size: 100%;}
+.profile_schedule_content .simptip-info.simptip-position-top.half-arrow:before {border-top: 7px solid #002E58;}
+.teacher_rating {display: block;margin-top: 2px;}
+.teacher_rating span {font-size: 13px;line-height: 1;vertical-align: middle;}
+.rating-container .filled-stars .star i {color: #002e58 !important;}
+.teacher_rating i {font-size: 20px;}
+.mr-star-rating i {transition: all 0.5s ease 0s;}
+.mr-star-rating span {font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;font-weight: 400;font-style: normal;line-height: 15px;}
+html[lang="jp"] body .mr-star-rating span {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: normal}
+.mr-star-rating span.fa-star-o:before {font-size: 0;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;}
+html[lang="jp"] body {font-family: 'hiragino_sans_gbw3', Helvetica, Arial, sans-serif;font-weight: normal}
+.mr-star-rating i + i:hover + i + i + i + i + input + .mr-error ~.description-on-hover {display: inline-block;transition: all 0.5s ease 0s;}
+.mr-star-rating i + i + i:hover + i + i + i + input + .mr-error + .description-on-hover ~.description-on-hover2 {display: inline-block;transition: all 0.5s ease 0s;}
+.mr-star-rating i + i + i + i:hover + i + i + input + .mr-error + .description-on-hover + .description-on-hover2 ~.description-on-hover3 {display: inline-block;transition: all 0.5s ease 0s;}
+.mr-star-rating i + i + i + i + i:hover + i + input + .mr-error + .description-on-hover + .description-on-hover2 +.description-on-hover3 ~.description-on-hover4 {display: inline-block;transition: all 0.5s ease 0s;}
+.mr-star-rating i + i + i + i + i + i:hover + input + .mr-error + .description-on-hover + .description-on-hover2 + .description-on-hover3 + .description-on-hover4 ~.description-on-hover5 {display: inline-block;transition: all 0.5s ease 0s;}
+.rating-item.mr .mr-star-rating .mr-error {display: none;}
+.mejs-container .mejs-controls {position: absolute;list-style-type: none;margin: 0;padding: 0;bottom: 0;left: 0;height: 30px;background: linear-gradient(to bottom, #002E58 0%,#002E58 100%) !important;  background-color:rgba(0, 0, 0, 0);border: 1px solid #ccc;background-color:#002E58 !important;display: block !important;width: auto !important;}
+.mejs-container.mejs-audio {background: #fff;position: relative;font-family: Helvetica,Arial;text-align: left;vertical-align: top;text-indent: 0;}
+.mejs-mediaelement {position: absolute;top: 0;left: 0; width: 100%;  height: 100%;}
+.mejs-controls .mejs-time-rail .mejs-time-total {margin: 5px 1px!important;}
+.home-page-team-block .team-group, .page-id-608 .team-group {min-height: 200px;}
+.team-content {margin-left: 260px;border: 1px solid #e0e0e0;background-color: #fcfcfc;font-size: 15px;/*height:100% !important*/}
+.team-content a {border: 1px solid #cfcfcf;padding: 6px 20px;border-radius: 6px;display: inline-block;color: #002E58;}
+.team-content a:hover {background-color: #002E58;color: #fff;border: 1px solid #002E58;}
+.contents.clearfix.open a.button.default {color: #fff;}
+.team-entry {padding: 20px 25px 60px;width: 400px;}
+h5.team-position {margin-bottom: 5px;color: #aeaeae;font-size: 16px;text-align: center;}
+.fa-star-half-empty::before, .fa-star-half-full::before, .fa-star-half-o::before {content: "\f089";}
+/*Staff Profile*/
+.staff-profile.team-entry { padding: 10px;}
+.staff-profile.team-entry .biodata { margin-bottom: 5px;  }
+.staff-profile.team-entry .biodata p  { margin-bottom: 10px; font-size: 14px; line-height: 20px; padding-right: 10px;}
+.staff-profile.team-entry .biodata input {   font-size: 12px; line-height: 16px; margin-bottom: 5px; padding: 4px 15px; }
+
+.staff-profile.team-entry .schedule_times p { font-size: 14px; margin:0; line-height: 20px}
+.staff-profile.team-entry .schedule_times,
+.staff-profile.team-entry .interest,
+.staff-profile.team-entry .experience_level,
+.staff-profile.team-entry .teaching_skills,
+.staff-profile.team-entry .lesson-type { /*min-height: 55px;*/ font-size: 16px; margin-bottom: 6px; padding: 5px 10px; border-top: 1px solid  #002E58; background: #f7f7f7; }
+.staff-profile.team-entry .lesson-type ~ a { font-size: 12px; margin-top: 4px; line-height: 16px;text-transform: uppercase ;padding: 4px 15px; margin-bottom:10px;  } 
+.staff-profile.team-entry .lesson-type span { display: inline-block;} 
+.staff-profile.team-entry .experience_level .staff-dur { margin: 0; }
+.staff-profile.team-entry .staff-dur li { padding: 0 15px; font-size: 12px; }
+.staff-profile.team-entry h5 { text-align: left; margin: 0; padding: 4px 0; color: #666; line-height: 12px; font-size: 14px; font-weight: bold; text-transform: uppercase; }
+.staff-profile.team-entry .tag { background: #e8e8e8; border-radius: 4px; margin-right: 3px;display: inline-block; font-size: 11px; font-weight: 500; line-height: 20px; padding: 0 6px; }
+.staff-profile.team-entry .schedule_profile_button { margin-bottom: 15px; }
+.staff-profile.team-entry .tag:hover { background: #979797; color: #fff; }
+.custom-teacher-profile { padding: 30px 0; }
+.custom-teacher-profile .personal-info { padding: 0 20px; }
+.custom-teacher-profile .personal-info table.comparison-table tr td { text-align: center; }
+.comparison-table-wrapper { padding-bottom: 15px; }
+/*//Staff Profile*/
+
+.staff-dur { display: block; } 
+.staff-dur li { border: 1px solid #cec8c8; display: inline-block; margin-right: 7px; padding: 0 15px 1px; color: #fff; list-style: none; position: relative; cursor:pointer; }
+.team-entry .staff-dur{ margin-bottom:10px;margin-top:10px; }
+.team-entry .staff-dur li{ padding: 6px 16px; border-radius:4px; }
+.staff-dur li.complete {  background-color: #ef4067; }
+.staff-dur li.basic { background-color: #17a8e9; }
+.staff-dur li.pro {  background-color: #f79136; }
+.team-content .team-entry .staff-dur a{ border:none; padding:6px 20px 6px 5px; }
+.staff-dur .basic-staff a { display: block; color: #002E58; }
+.staff-dur li.active:after { content: ' '; height: 0; position: absolute; width: 0; border: 7px solid transparent; top:38px; left: 42%; z-index:999; }
+.staff-dur li.complete.active:after { border-top-color: #ef4067; }
+.staff-dur li.pro.active:after { border-top-color: #f79136; }
+.staff-dur li.basic.active:after { border-top-color: #17a8e9; }
+.staff-dur .basic-staff,
+.complete-staff,
+.pro-staff { border: 1px solid #ddd; display: inline-block; margin: 12px 0 0; padding: 3px 12px; position: relative; display: none; border-radius:3px; background-color:#fff; }
+.team-content .team-entry .staff-dur a:hover{ background-color:transparent; color:#777; }
+.team-content .mejs-audio { display: none; }
+.team-nav a{ position:absolute;top:50%;z-index:10;display:block;overflow:hidden;margin-top:-35px;width:35px;height:70px;border:1px solid #dcdcdc;background-color:#fff;   background-color:rgba(255,255,255,.75);text-align:center;font-size:0;-webkit-border-radius:3px;border-radius:3px;-webkit-transition:all .25s ease;transition:all .25s ease;}
+.team-nav .prev{left: 30px; }
+.team-nav .next{right: 30px; }
+.team-nav a:hover{ border-color: transparent; background-color: #002E58; }
+.team-nav a:before{display:block;color:#002E58;font-size:30px;font-family:'fontello';line-height:68px;-webkit-transition:color .25s ease;transition:color .25s ease;cursor:pointer;}
+.team-nav .prev:before {content:'\e8b7';}
+.team-nav .next:before {content:'\e8b8';}
+.team-nav a:hover:before {color:#fff}
+/*===== ACCENT TEACHERS ENDS =====*/
+.asp-coach .desc_text_new ul{margin-bottom:15px;}
+li.mob-view{display:none !important}
+@media (max-width:767px){
+	li.mob-view{display:block !important}
+	.main-nav.d-none.d-lg-block{display:none !important}
+	/*.main-nav.d-none.d-lg-block {display:block !important;position:relative;}
+	.main-nav.d-none.d-lg-block .mobile-nav-toggle.d-lg-none{position:absolute !important;}
+	.main-nav.d-none.d-lg-block.open{background-color:rgba(40, 38, 70, 0.8);}
+.main-nav.d-none.d-lg-block button.mobile-nav-toggle .fa-bars-more{display:block !important;color:#065e77;font-family:helveticaneuemedium;font-size:20px;position:relative;top:3px;}
+	.main-nav.d-none.d-lg-block.open button.mobile-nav-toggle .fa-bars-more{display: none !important;}
+	.main-nav.d-none.d-lg-block button.mobile-nav-toggle .fa-times{display: none !important}
+	.main-nav.d-none.d-lg-block.open button.mobile-nav-toggle .fa-times{display: block !important;color:#fff}
+	.main-nav.d-none.d-lg-block ul{display:none;}
+	.main-nav.d-none.d-lg-block.open ul{display:block;background-color:rgba(40, 38, 70, 0.8);}
+		.main-nav.d-none.d-lg-block.open ul li{display:block;float:none;width:100%;text-align:left}
+			.main-nav.d-none.d-lg-block.open ul li a{color:#fff}*/
+	
+	
+	#amazing-language-partners .team-member article .contents{margin-bottom:20px;width: 100% !important;}
+	.staff-members .team-member.mobile-only, .staff-members .team-member.mobile-only .team-contents{overflow:auto !important; width:auto !important;display: block !important;}
+	.graph-container-heading, .teacher-accordian-onePage .graph-container-heading{font-size: 12px !important;}
+}
+/* ONE PAGE CANVAS */
+.one_page_canvas .upload_image{margin-bottom: 0 !important;padding: 40px 20px;}
+.one_page_canvas .drag_main{border: 1px solid #002E58 !important;border-radius: 8px !important;height: 332px;}
+.Drag_files{border: 1px solid #cacaca !important; border-radius: 5px !important; border-radius: 8px !important;float: none !important;margin: 0 !important;padding: 15px !important;}
+.Drag_files .demo-droppable{font-size: 15px !important;color:#777 !important;font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;}
+.one_page_canvas .drag_main .drag_add span{font-size: 16px !important;line-height: 1.4 !important;}
+.one_page_canvas .drag_main .freetrial_btn {border-radius: 4px !important;}
+.one_page_canvas .drag_main .drag_add p{font-size: 16px !important;}
+.one_page_canvas .upload_folder{border: 1px solid rgba(0,46,88,.4) !important; border-radius: 8px !important;overflow: hidden !important;}
+.one_page_canvas .breadcum_left span .fa-home {margin-right: 10px !important; font-size: 1.5rem !important;  color:  #666 !important;}
+.one_page_canvas .breadcum_left span {font-size: 16px !important; color: #666 !important;}
+.one_page_canvas .upload_folder .file_inner{padding: 10px 0 !important;}
+.one_page_canvas .file {max-height: 247px !important;}
+.nav-refresh i, .nav-search i, .nav-gear i{font-size:1.4rem !important}
+
+#pdf_listing{padding:30px 30px 10px}
+#pdf_listing .pdf-download p{font-size: 16px !important;color:#444 !important;line-height:24px;}
+#pdf_listing .pdf-download p a{margin-bottom: 0;font-size: 16px;}
+input#load_more_button{display:inline-block;margin-bottom:15px;padding:0px 20px;border:1px solid rgb(207, 207, 207);background-color:transparent;text-align: center;text-transform: uppercase;font-family: 'helveticaneuelight',Helvetica, Arial, sans-serif;font-weight: normal;font-size: 14px;cursor: pointer;border-radius: 6px;transition: all .25s ease;color:#002E58;line-height: 40px;white-space: normal;}
+
+/* Review container */
+.review-container{float: none;margin-bottom: 30px;padding: 30px;margin-top: 0;}
+.review-container .lesson-topic-wrapper .onepage_sub_title{background-color: #06203b;color: #fff;border-radius: 10px 10px 0 0;text-align: center;}
+.review-container .lesson-topic-wrapper .topic_inner_ro{background-color: #eee;border: 1px solid #ccc;padding:0 10px;}
+	.review-container .lesson-topic-wrapper .topic_inner_ro + .topic_inner_ro{border-top:none;}
+		.review-container .lesson-topic-wrapper .topic_inner_ro span{padding: 10px;border-right: 1px solid #ccc;display: inline-block;width: calc(20% - 2px);margin: 0;float: left;}
+			.review-container .lesson-topic-wrapper .topic_inner_ro span + span{width:80%;border-right:none}
+.review-container .status-options-wrapper .active_button{padding-bottom:0;float:none}
+.one_page_canvas .active_button .act_btn, .status_right .act_btn{border-radius: 6px;line-height: 36px;}
+.act_btn.color1{border:1px solid #ff512b;color: #ff6442;}
+.act_btn.color2{border:1px solid #2db292;color: #25af8e;}
+.act_btn.color3{border:1px solid #ffd353;color: #ffd353;}
+.act_btn.color4{border:1px solid #168cc7;color: #002e58;}
+.act_btn.color5{border:1px solid #333333;color: #333333;}
+
+.active_recall_pair .onepage_sub_title{border-radius: 8px 8px 0 0;background-color: #0a5996;}
+.active_recall_pair .active_main_row{border:1px solid #ccc !important;border-top: none !important;padding: 0 15px !important;}
+.topic_inner_ro .tpc_single{padding: 0px 0;}
+.topic_inner_ro .tpc_single p{margin-bottom: 0 !important;}
+.active_recall_pair .active_main_row .col-lg-10{border-right:1px solid #ccc !important;}
+.active_recall_pair .status_right{float: none;width: 100%;text-align: right;padding: 19px 0px 0 !important; }
+.active_main_row.single .status_right {padding: 15px 15px 0 !important;}
+	.active_recall_pair .status_right .icon.edit-item{position: relative;left: -10px;top: 3px;}
+	.active_recall_pair .recall_btn{padding-right: 0;}
+	.active_recall_pair .status_right .checkcontainer{margin-top: 6px;}
+
+.lesson_materials_task{margin:30px;}
+.point-to-improve{margin: 30px;}
+/* POINTS TO IMPROVE */
+.success-alert{margin: 0 !important;padding:0 !important;border: 1px solid #ddd;border-radius:6px;background-color:#02a1da;color:#fff !important;}
+	.success-alert .improve_level ul{padding:0 !important}
+	.success-alert .improve_level ul li{font-size: 16px !important;color:#fff !important;display: inline-block  !important;width: 180px !important;border-left:1px solid #fff;padding:15px !important;}
+		.success-alert .improve_level ul li:first-child{border-left:none}
+		.success-alert .improve_level ul li span,
+		.success-alert .improve_level ul li h5{color:#fff !important;font-size:16px  !important;}
+	.success-alert .improve_level ul li + li{width: calc(100% - 200px) !important;padding-left: 15px;}	
+/* improve_two_sec */
+.improve_two_sec{}
+	.improve_two_sec .improve_box{padding: 0;}
+		.improve_two_sec .improve_box h4{background-color:#e26563;color:#fff;font-weight:normal;text-align:center;margin-bottom:10px;border-radius:10px 10px 0 0;font-size:18px;padding:10px 5px;}
+		.improve_two_sec .improve_box.right h4{background-color: #92c57a;}
+		#response_div_points_to_improve,
+		#response_div_strong_points{margin: 40px auto 10px;padding: 10px;width: 94%;height: calc(400px - 40px) !important;}
+		.improve_two_sec .improve_box .custom_select {position: absolute;right:25px;top: 60px;}
+		.improve_two_sec .improve_box .custom_select .select.cust {width: auto;float: right;height: auto;border: none;top: -10px;border-radius: 0 !important;background: rgba(0,0,0,.8);border-radius: 8px !important;}
+		.improve_two_sec .improve_box .custom_select .select.cust select{color:#fff;padding: 0 20px 0 5px;height: 30px;line-height: 36px;background: rgba(0,0,0,.8) !important;}
+		.improve_two_sec .improve_box .custom_select .select:after {top: -8px !important;right: -7px;color: #fff;}
+		.improve_two_sec .frm_dstion p {margin-bottom: 5px !important;}
+		.improve_two_sec .form-group{position:relative}
+		.improve_two_sec .form-group .points_to_improve_arraow{background:#e26563;color:#fff;width: 20px;display: inline-block;text-align: center;border-radius: 50%;height: 20px;position: absolute;left: 0;top: 30px;font-size:11px;line-height: 20px;}
+		.improve_two_sec .improve_box.right .form-group .points_to_improve_arraow,
+		.improve_two_sec .improve_box.right .form-group .strong_points_arraow{background:#92c57a;color:#fff;width: 20px;display: inline-block;text-align: center;border-radius: 50%;height: 20px;position: absolute;left: 0;top: 30px;font-size:11px;line-height: 20px;}
+	.point_to_improve .average_btn a{font-size: 15px;color:#666;font-weight:bold;border:1px solid #ccc;border-radius:25px;display:inline-block;min-width:90px;height:auto;line-height:1.2;padding:10px 15px;background-color:#f2f2f2;}
+	.lesson_comment{padding: 0 30px 0px;}	
+	.lesson_comment .check_round{background-color:#ffffff;border: 1px solid#cccccc;border-radius: 4px;display: block;margin: 0 0 10px calc(95% - 160px);padding: 5px;width: 160px;}
+	.lesson_comment .check_round .form-group .checkcontainer{line-height: 2.1;padding-right: 10px;}
+	.lesson_comment h3 {padding: 0;margin-bottom: 10px;}
+	.one_page_canvas .card-header a{padding:15px 20px;}
+	.tab_pnle_sec .card{margin: 5px 0 0px;}
+	.tab_pnle_sec .card .ca_content,
+	.tab_pnle_sec .card .fp_content,
+	.tab_pnle_sec .card .lc_content,
+	.tab_pnle_sec .card .v_content,
+	.tab_pnle_sec .card .ga_content{padding: 15px 30px;}
+		.tab_pnle_sec .card .ca_content p,
+		.tab_pnle_sec .card .fp_content p,
+		.tab_pnle_sec .card .lc_content p,
+		.tab_pnle_sec .card .v_content p,
+		.tab_pnle_sec .card .ga_content p{color:#444;margin-bottom: 10px;}
+	.point_to_improve.profile{padding: 15px 30px 0;}
+	.point_to_improve.profile .select.cust{border: 1px solid #ccc;}
+	.mt-30{margin-top:30px !important;}
+	.custome_nav ul li span{color:#444}
+	.form-control{border-radius: 6px;border: 1px solid #ccc;}
+	#frm-keyword-search .btn-search-keyword{position:absolute;background:#002e58;padding:10px 20px;border-radius:6px;color:#fff;font-size:16px;font-weight:400;right:3px;top:3px;height:46px;width: auto;}
+	#frm-keyword-search .btn-search-keyword i{padding-right:5px;}	
+	.form-group .checkcontainer {color: #444;}
+	ul.alfa_key{display: inline;}
+	ul.alfa_key li{width: 24px;height: 24px;line-height: 20px;margin-right: 3px;border-radius:6px}
+	.custom_search_keyword input{height: 42px;}
+	.form-group.has-search.custom_search.custom_search_keyword.mb-3{margin-bottom: 0rem !important;}
+	div.dataTables_wrapper div.dataTables_length select{height: 42px;}
+	div.dataTables_wrapper div.dataTables_length{padding-top: 25px;}
+	#keyword-table_wrapper .dt-buttons.btn-group{position: relative;top: 22px;}
+	.table.dataTable thead tr th:first-child{padding-top: 20px;}
+	.custome_nav ul li{margin:10px 0}
+	.keyword_table .table td {padding: 10px 12px;}
+	#keyword-table_wrapper .col-sm-12.col-md-5.text-right .dt-buttons.btn-group{top:0}
+	
+/* STUDENTS SECTION STARTS */
+.reserv-detail .service_session_details{padding:10px 15px;}
+.reserv-detail .s-hd{padding-bottom:10px;margin-bottom: 15px;}
+.reserv-detail .s-hd p{margin-bottom:0}
+.reserv-detail .badge{font-size:90%;letter-spacing:.06em}
+.reserv-detail h6{margin-bottom:5px;}
+.reserv-detail .serv_details .tym_table_Details p{margin-bottom:0}
+.reserv-detail .serv_details .tym_table_Details {margin-bottom: 5px;}
+.reserv-detail .service_session_details{margin-bottom: 10px;}
+.acc-student.custome_nav ul li{margin:0 }
+
+.acc-student.custome_nav ul li span {font-size: 16px;}
+.student-account .accent_plan .accent_title h1{margin-bottom:0}
+#wrapper, 
+#content, 
+header, 
+.profile_sec, 
+.logine_sec, 
+.login_img, 
+.login_inner,
+.my_card_sec{float:none }
+#wrapper {overflow-x:hidden}
+.login_img {position: relative;width: auto;left: 0;float: none;height: auto;padding-left:0;padding-right:0}
+.login_inner {padding: 70px 0px 0px 0px;height:auto}
+/* Sucess message */
+.jq-toast-wrap.top-right {top: 100px;}
+
+
+
+.title_step{margin-bottom: 0;}
+.custome_nav ul.one-page-tab li{margin:0}
+.pos_rel{position:relative;}
+.sapert_div.white_control.balance h4,
+.sapert_div.white_control.balance p{margin-bottom:10px;}
+	.sapert_div.white_control.balance p span{font-family:helveticaneuemedium, Helvetica, Arial, sans-serif}
+.sapert_div.white_control.balance .plan_header h2{margin-bottom:0}
+#previous_course_detail_table{width:100% !important}
+.booking-det{overflow-x:inherit !important}
+div.dataTables_wrapper div.dataTables_length{float:none;padding-top: 0;}
+.keyword-sec #keyword-table_wrapper .dt-buttons.btn-group{top:0}
+.card.custome_nav .nav.nav-tabs.no-mar li{margin:0}
+.bord .card.custome_nav_inner ul li {padding: 0 5px;}
+.table-responsive.keyword_table{overflow-x:inherit}
+#alert-message-6 .modal-dialog{width:120px !important;}
+#alert-message-6 .modal-body .text-center {padding: 0px 0;border-top: 0px solid #ccc;margin-top: 0;}
+tr.current-lesson {background-color: #02a1da !important;}
+	.table_custom tbody > tr.current-lesson > td,
+	.table_custom tbody > tr.current-lesson > td a{color:#000}
+tr.today-lesson {background-color: #ccc !important;padding:5px 8px}
+	.table_custom tbody > tr.today-lesson > td,
+	.table_custom tbody > tr.today-lesson > td a{color:#000}
+tr.previous_lesson{background-color: #f00 !important;}
+	.table_custom tbody > tr.previous_lesson > td,
+	.table_custom tbody > tr.previous_lesson > td a{color:#fff}
+	.table_custom tbody > tr > td{padding: 5px 8px;}
+	#collapseOne .card-body .table_custom tbody > tr > td:nth-child(8){min-width:120px}
+	
+	
+/* PRODUCT MESSAGES */	
+ul.products-page {margin: 0 0 1em;padding: 0;list-style: none;clear: both;text-align:center}
+	ul.products-page li.product {margin: 0 5px 1% 5px !important;margin-left: 5px;width: calc(33% - 10px) !important;display: inline-block;position: relative;vertical-align: top;float: none !important;padding: 0 !important;min-height: 320px !important;border-radius: 5px;border: 1px solid #cfcfcf;background-color:#fff;text-align: center;overflow: hidden;color:#777;}
+	ul.products-page li.product h3 {padding: .5em 0; margin: 0; font-size: 1em;text-align: center;color:#5b5e60;height: 100px;font-weight: normal;font-family: 'helveticaneuemedium', sans-serif;font-style: normal;line-height: 1.2;}
+	ul.products-page li.products .price {color: #85ad74; display: block; font-weight: 400;  margin-bottom: .5em;background-color:#f7f7f7;text-align: center;padding: 9px 0;font-size: 22px;border-top: 1px solid #f7f7f7;border-bottom: 1px solid #f7f7f7;}
+		ul.products-page li.products .price .amount{font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;font-weight: normal;color:#002E58;line-height: 28px;}
+		ul.products-page li.products .price .one-lesson-price {display: block;font-size:13px;line-height:14px;margin-top:1px;color:#002E58;font-family:'helveticaneuelight', Helvetica, Arial, sans-serif;font-weight: normal;}
+		ul.products li.product p {margin: 0 0 60px 0;font-weight: normal;}
+		ul.products li.product .add_to_cart_button {left: 15%;background: none repeat scroll 0 0 #fff; border: 1px solid #cfcfcf;border-radius: 10px;bottom: 10px;color:#002E58;font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;font-weight: normal;left: 40px;margin: 5px auto;padding: 12px;position: absolute;width: 70%;}
+	ul.products-page li.product:nth-child(4n+1) {margin-left: 5px !important;}
+	ul.products-page li.product h3, 
+	ul.products-page li.product h3{display: flex;align-content: center;justify-content: center;align-items: center;width: 100%;padding: .5em 0;margin: 0;font-size:16px;text-align: center;color:#5b5e60;height: 100px;font-weight: normal;}
+	ul.products-page li.product .price, 
+	ul.products-page li.product .price{color:#85ad74;display: block;font-weight: 400;margin-bottom: .5em;background-color:#f7f7f7;text-align: center;padding: 9px 0;font-size: 22px;
+border-top: 1px solid #f7f7f7;border-bottom: 1px solid #f7f7f7;}
+	ul.products-page li.product .price .amount{font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;font-weight: normal;color: #002E58;line-height: 28px;}
+	ul.products-page li.product .one-lesson-price{display: block;font-size: 13px;line-height: 14px;margin-top: 1px;color:#002E58;font-family: 'helveticaneuelight', Helvetica, Arial, sans-serif;font-weight:normal;}
+	ul.products-page li.product p {margin: 0 0 60px 0;font-weight: normal;padding: 0;line-height: 1.75em;font-size:16px;}
+	ul.products-page li.product .add_to_cart_button {left: 15%;background: none repeat scroll 0 0 #fff;border: 1px solid #cfcfcf;border-radius: 10px;bottom: 10px;color:#002E58;font-family: 'helveticaneuemedium', Helvetica, Arial, sans-serif;font-weight: normal;margin: 5px auto;padding: 12px;position: absolute;width: 70%;line-height: 1em;font-size:16px;text-transform:uppercase}
+	.editor_textarea, 
+	.teacher-accordian-onePage .editor_textarea{text-align:left;line-height:normal}
+		.teacher-accordian-onePage .editor_textarea div {text-align:left !important;}
+			.teacher-accordian-onePage .editor_textarea div:empty { display: none !important }
+	ul.products-page li:hover{background-color:#002E58;border: 1px solid #002E58;}
+	ul.products-page li.product:hover p {color:#fff}
+
+	/*  */
+	.accent_pricebox .accent_box .acn_price h3,
+	.accent_pricebox .accent_box .acn_price h4{text-align:center}
+		.accent_pricebox .accent_box .acn_price h4 span{display:block}
+	/* .current_course .date_time_tbl */
+	.current_course .date_time_tbl .col-lg-3{-ms-flex: 0 0 20%;flex: 0 0 20%;max-width: 20%;}
+
+@media (max-width:767px){
+	ul.products-page li.product{width:100% !important}
+	.business_sec_new h5 {margin-top:10px;font-size:22px;margin-bottom: 30px;}	
+	.team-group .fav-cal-icons{position: relative;bottom: 0;}
+	.student-account .table-responsive.view_order_list{}
+	.profile_inner.tab_pnle_sec {padding: 10px;}
+	.regular_course .table-responsive { overflow-x: inherit;}
+	.table-container .table-inner-container{overflow-x:auto;}
+	.table-container .table-inner-container .table {width: 640px;}
+	.custome_nav.acc-student.one-page-acc .tab_pnle_sec .custome_nav ul li {width: 33.33%;}
+	#keyword-search-table-container ul li a{position: relative;top: -2px ;}
+	.copyright{padding:10px}
+	.custome_nav ul.one-page-tab li{width: 33.33%;}
+	.custome_nav ul.one-page-tab li a{padding-left:0;padding-right:0}
+	.custome_nav ul.one-page-tab li:first-child a{padding-right:5px}
+	.slider-btn-left,
+	.slider-btn-right{position:absolute;bottom:0%;left:calc(50% - 70px);}
+	.slider-btn-right{left:calc(50% - 20px);}
+	.questions_sec.p-4 {padding: 15px !important;}
+	.acc-student.custome_nav ul li span {font-size: 13px;}
+	#frm-keyword-search .btn-search-keyword{padding: 5px 15px;border-radius: 4px;height: 34px;}
+	.order_details_sec .table-responsive.no-overflow{overflow-x:hidden}
+	.table-inner-container.view-order .row .col-sm-12{overflow-x: auto;width: 100% !important;max-width: 640px;}
+		.table-inner-container.view-order .row .col-sm-12 table.table{margin-bottom: 25px;padding-bottom: 15px;}
+		.table-inner-container.view-order .row .col-sm-12 .table td + td{min-width:40px;}
+	label.empty{display:none}
+	div.dataTables_wrapper div.dataTables_length{width:100%}
+		div.dataTables_wrapper div.dataTables_length label{text-align:center;}
+	.logo a img {height: 32px;}
+	.login_inner {padding: 10px 0px;height: auto;}
+	.reservation_keyword #keyword-seach-text{-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}
+	.table-responsive.keyword_table{overflow-x: inherit;-webkit-overflow-scrolling: touch;}
+	.table-responsive.keyword_table .key-word-table .row + .row .col-sm-12{overflow-x: auto;}
+	.table-responsive.keyword_table .key-word-table .row + .row + .row .col-sm-12{overflow-x: inherit;}
+	.lesson_record_sec.facebook img{position: relative;    top: 12px;}
+	.acc-container.lesson_record_id_div img{top:0}
+	.bottom.btns-wrapper .bottom-wrap-btn img{top:0}
+	.improve_two_sec .improve_box .custom_select .select.cust{top: 10px;}
+	.graph-container.current-page-graph{width:100%}
+	.acc-box {padding: 0 0px;}
+	.point-to-improve {margin: 30px 0;}
+	.success-alert .improve_level ul li{padding: 0 15px !important;border-left:none}
+	.one_page_canvas #accordion .card{padding: 0 0px;}
+	.lesson_materials_task {margin: 0;}
+	.lesson-teacher-table .row + .row .col-sm-12{overflow-x: auto;}
+	.lesson-teacher-table .row + .row + .row .col-sm-12{overflow-x: inherit;}
+	.card.custome_nav .nav.nav-tabs.no-mar li{margin: 0;width: 33.33%;}
+	#onepage-session-canvas .card-body{clear:both}
+	#mv_to_weak .fas.fa-angle-double-left{transform: rotate(90deg);}
+	#mv_to_strong .fas.fa-angle-double-right{transform: rotate(90deg);}
+	.current_course .date_time_tbl .col-lg-3 h5{margin-bottom:0px;font-size:14px;}
+	.current_course .date_time_tbl .col-lg-3 .tym_table_Details{margin-bottom:15px;}
+	.current_course .date_time_tbl .col-lg-3 .tym_table_Details p{margin-bottom:0px;}
+	.profile_sec.stud-sec-cont .profile_inner.tab_pnle_sec .tab-content .current-course-container {padding: 10px;width: auto;overflow: hidden;}
+	.profile_sec.stud-sec-cont .profile_inner.tab_pnle_sec .tab-content .current-course-container .current-course-inner{float: none;overflow: auto;}
+	.profile_sec.stud-sec-cont .profile_inner.tab_pnle_sec .tab-content .current-course-container .current_course{float: left;word-break: keep-all;min-width: 950px;}
+}
+@media (min-width:390px) and (max-width:767px){
+	.improve_two_sec .improve_box .custom_select .select.cust{top:-10px;}	
+	}
+@media (min-width:768px) and (max-width:980px){
+	.booking-det .table-inner-container.view-order .row + .row .col-sm-12{overflow-x: auto;width: 100% !important;max-width: 100%;margin-bottom: 25px;padding-bottom: 15px;}
+	.regular_course .table-responsive { overflow-x: inherit;}
+	.table-container .table-inner-container .table th,
+	.table-container .table-inner-container .table td{font-size: 14px !important;}
+	.logo a img {height: 46px;}
+	.login_inner {padding: 20px;}
+	.custome_nav ul li {margin: 0px 0;}
+	.current_course .date_time_tbl .col-lg-3 h5{font-size: 14px;min-height: 30px;}
+}
+.cart_bottom_btn .col-md-3 .btn_custon{float:left}
+.cart_bottom_btn .col-md-3 .coupon_er{position:absolute}
+.recruitment_margin ul.circle-list li i.fa-chevron-right{display:none !important}
+	
+@media (min-width:768px) and (max-width:1024px){
+	.main-nav.d-none.d-lg-block{display:block !important}
+		.main-nav.d-none.d-lg-block a{font-size: 16px;padding: 10px 5px;}
+		.global-services {padding: 40px 0 40px 0;}
+		.chart_part.chart_slider .col-12.col-lg-5 + .col-12.col-lg-5 {padding: 40px 0 0 !important;}
+	.service_session .service_session_details{overflow: auto !important;}
+		.service_session .service_session_details .s-hd,
+		.service_session .service_session_details .serv_details{min-width: 800px;}
+		.service_session .service_session_details .serv_details .col-2,
+		.service_session .service_session_details .serv_details .col-4{padding-right: 10px !important;padding-left: 10px !important;}
+	.cart_bottom_btn .col-md-3{flex: 0 0 33%;max-width: 33%;}
+	.cart_bottom_btn .col-md-6 {flex: 0 0 34%;max-width: 34%;}
+}
+.appointment-sec-teacher .col-3{padding-top:18px !important;margin:0 !important;line-height:16px !important}
+@media (min-width:768px) and (max-width:1180px){
+	.lesson_materials_task .col-lg-6 .lesson_inner .form-group{position:relative}
+	.form-group.lesson .lessn_btn{position: absolute !important; top: 15px !important;  right: 10px !important;}
+	}
+@media (max-width:767px){
+		.service_session .service_session_details .s-hd,
+		.service_session .service_session_details .serv_details{min-width: 800px;}
+		.service_session .service_session_details .serv_details .col-2,
+		.service_session .service_session_details .serv_details .col-4{padding-right: 10px !important;padding-left: 10px !important;}
+	.cart_bottom_btn .btn_custon{float:right !important;min-width:150px;padding-right:30px;}
+		.cart_bottom_btn .btn_custon:after{right:5px;}
+	.cart_bottom_btn .col-md-3 .coupon_er{position:relative}
+	.coach_table + .button{width:auto !important}
+	.coach_table + .button:before,
+	.coach_table + .button:after{display:none}
+	#teaching_category .badge.badge-primary{font-size:14px;}
+	.rating-container .rating-stars{top: 4px;}
+	.appointment-sec-teacher .col-3,
+	.appointment-sec-teacher .col-6{padding-top: 5px !important;margin: 0 !important; line-height: 16px !important;  flex: 0 0 100%; max-width: 100%; padding-bottom: 5px;}
+	}
+
+/* BACK TO TOP STYLE */
+#back-to-top {position:fixed;right:10px;bottom:10px;cursor:pointer;width:50px;height:50px;background-color:#168cc7;text-indent:-9999px;display:none;-webkit-border-radius:60px;-moz-border-radius:60px;border-radius:60px;z-index:9999}
+#back-to-top span {position:absolute;top:50%;left:50%;margin-left:-8px;margin-top:-12px;height:0;width:0;border:8px solid transparent;border-bottom-color:#ffffff;}
+#back-to-top:hover {background-color:#ff5123;opacity:1;filter:"alpha(opacity=100)"; -ms-filter:"alpha(opacity=100)";}

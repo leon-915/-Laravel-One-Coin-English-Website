@@ -1,0 +1,12 @@
+{
+    "web": {
+        "client_id": "202836734297-jqr48q852tvr3mgmubml7isig3bimpii.apps.googleusercontent.com",
+        "project_id": "lokalingo",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret": "9cEmH6tBkr-ewZnIfIQeV3ct",
+        "redirect_uris": ["https://lokalingo.com", "https://trootechproducts.com:8007"],
+        "javascript_origins": ["https://lokalingo.com", "https://trootechproducts.com:8007"]
+    }
+}

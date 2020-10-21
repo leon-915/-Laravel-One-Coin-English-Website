@@ -1,0 +1,196 @@
+.graph_tab_1_2 {
+    margin: 0 auto;
+    padding: 15px 0 25px;
+    width: 100%;
+}
+
+.graph_tab_2 {
+    overflow: auto;
+}
+
+.acc-container {
+    padding: 15px 0;
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.teacher-accordian-onePage .current-page-graph.onepage-graph {
+    margin-bottom: 5px;
+}
+
+.graph-container.current-page-graph.onepage-graph {
+    margin-bottom: 5px;
+}
+
+.graph-container.current-page-graph {
+    border: 1px solid #0a5996;
+    width: 90%;
+}
+
+.graph-container {
+    text-align: center;
+    position: relative;
+    width: 97%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.graph-container-heading,
+.teacher-accordian-onePage .graph-container-heading {
+    font-size: 22px;
+    font-weight: 400;
+    color: #777;
+    line-height: 1;
+    width: auto;
+}
+
+.editor_textarea,
+.teacher-accordian-onePage .editor_textarea {
+    width: 100%;
+    min-height: 250px;
+    max-height: 400px;
+    padding: 10px;
+    text-align: left;
+    overflow: auto;
+    color: #000;
+}
+
+div#editor_textarea:focus {
+    outline: 0;
+}
+
+.teacher-accordian-onePage .btns-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.translate-btn a.button,
+.teacher-accordian-onePage .accent-menu a,
+.teacher-accordian-onePage .bottom-wrap-btn {
+    display: inline-block;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    height: 32px;
+    line-height: 28px;
+    border-radius: 6px;
+    vertical-align: top;
+    color: #002E58;
+    margin-top: 5px;
+}
+
+.teacher-accordian-onePage .bottom-wrap-btn img,
+.teacher-accordian-onePage .accent-menu a img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.teacher-accordian-onePage a.botm-eye-icon-white,
+.teacher-accordian-onePage .accent-menu#previewHtmlAreaParent a {
+    background-color: #002E58;
+}
+
+
+.bottom.btns-wrapper {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bottom.btns-wrapper .bottom-wrap-btn {
+    width: 250px;
+}
+
+.translate-btn a.button,
+.accent-menu a,
+.bottom-wrap-btn {
+    display: inline-block;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    height: 32px;
+    line-height: 28px;
+    border-radius: 6px;
+    vertical-align: top;
+    color: #002E58;
+    margin-top: 5px;
+}
+
+.bottom-wrap-btn img,
+.accent-menu a img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.bottom-wrap-btn:hover,
+.accent-menu a:hover {
+    transition: all 0.3s linear 0s;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.26);
+    background-color: #ddd;
+}
+
+.topictag {
+    color: #168CC7;
+    font-weight: bold;
+}
+
+.keyphrase {
+    color: #FF512B;
+    font-weight: bold;
+}
+
+.keyword {
+    color: #ED1E68;
+    font-weight: bold;
+}
+
+.arp a {
+    color: #17AA87;
+}
+
+.editor_textarea .correct_incorrect {
+    display: inline-block;
+}
+
+.incorrect a {
+    color: #FF0000;
+}
+
+.correct a {
+    color: #33662F;
+}
+
+.not-ie a {
+    -webkit-transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
+    transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
+}
+
+strike {
+    text-decoration: line-through;
+}
+
+.modal-dialog {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+@media(max-width: 768px) {
+  .modal-dialog {
+    min-height: calc(100vh - 20px);
+  }
+}
+
+
+.btn-pdf{
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background: #002e58;
+    color: #fff !important;
+    position: relative;
+    text-align: left;
+    margin-top: 10px;
+    display: inline-block;
+}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lokalingo",
+  "private_key_id": "88d596bc207112158ff85371df4495d96a0b382e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCLxJJj4lCEGIFh\nnggdUuwu4k+KpmIiULnn01nG0EH0wScr0QKKIy6DH96Khblnp509VgdNX+pFxwg7\noI9Ojg08wpmA+aw3SEONKK8cse+ZTkYJt4jic+Kxz6bpvA4rbc6n0Bmb/3AfDFBa\nChfB6dAcQ8tWXulSz05hEYAHW7esaeOw6FvIYvybkLJqAY4Ht0un9g2YDo9vsK5n\n7Yh0ul/S+b+5fj4CuC7ZJQobg4YHDJnIcx0HeJcAUhe06cOhIcjS85n5e+NuEFjb\n0FU/IUY5SnZfFiPFmSWAQnbpKbhc8I3RQ0vxDOiR7Ia2Ku162EVt8P+vBH+xq3vM\nmPAswHMhAgMBAAECggEAAUdNjYNa+DJfMJzo9xe0mGMylhKakDTL1o6M4jAygkIo\nERMK4mea+9EVUJATl5qlahO44mDPvE6rSRxZYz8SaO1gyRi/lgvfrlFidLE9/1mD\nc4BNzMCBoN3E6ZtyR7xr6QYSzeYCyQ3sSD6SZBA2+qM2H3ajzMGftmyaDrcskXOt\nDvELoDDpHWK7Yh9H/qJWe6HupAisRd/Co7171Gsl5TUGoDq58eKo6qz5b7GWtVHy\nOyOcifV/g6XGx5RrOJp5BibIIFYSge1QYTvBIRYEOFVmEnrAeRceurQk8D+poqLx\nV+YyiG6PfDB8NyKX5qPbLH7dhCbbgstr5JDNFw+b6QKBgQDAsFdpXTtvyaw+9qz7\neTy7SME8idxchwyPRfsVVUhukfz2opnGAYbtAMS/eFT0q0/l0xJcr2cxdFfDmHYr\nEGtTMnHNqT8PFeHNJCjiYr5ypJfeAket9b9mmfwuQSCdtmEW5n/W/ov9TKkUVc+L\nxjHQS+3Ex5Tn3f7stX0K/f+jXQKBgQC5sOHWxk7rR2OWvf0yTJNIARWG+0XspLr2\nI2OUr5Mdud5TH0hRT7hH5M5qYPuUmZbjv6Pubq8xY0lb2+LrnJYqNFb6KwB49kGh\nea2y+38XwUVRULYj5BgrAvBkPrs412vRFhbBVEB5XMMqzHmvUvc+iYyDRu3sGU6/\nWW2agzf2lQKBgAn8GUt4bVAJn0dT+Pq++Yqq5niAnE6fION7uNsOJEa2gek128oK\n4jb9xzQ0xBI5nlZGbbknza0eXj3gdJ8eprEU+Bi0IHRjqeO7b/LrMvs11DjI3XYC\nOfzTFeI/tbT2cmmBYDZ/0jk587j+CVcw2fv1M0jzHqA1PLR/Yw9iwhBxAoGAPy5z\nOVvSYHWy6giNDT9G4boUtA/tM969CqDx8hZnbTbf8dJ0Dc6dOkEdBs8m6uHzmFyN\nj8Qzcg+BV3MS2+40nfmfGpHlIENSA3peYsb18IQ/bLKUttOWcZQXbVR26ZlKwyLL\n7U4YffLVKUvXn5MQM0Qj/kr1C191DuCDzY4WTZ0CgYEAu2XQYRHmf3eIzuzIeT8x\nePeGokTtj3TxxQHph0laajlER8SrbKhu2fRW5mmgGLa1IJxeObQcVzJX4VJEHpQZ\neVdBtOGP0pbHQpFvDj+RM7va3+MMfctGbia16vcxFAxktBFoCVN8LglHo6+mjLSP\nJ1ikUy7OuVhrnrSS0F394c4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "checkfolders@lokalingo.iam.gserviceaccount.com",
+  "client_id": "102898834150035273159",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/checkfolders%40lokalingo.iam.gserviceaccount.com"
+}
